@@ -94,7 +94,7 @@ const InfoPage = () => {
       <PageBanner title={page.title} subtitle={page.subtitle} />
       <section className="py-14 bg-cch-light-gray">
         <div className="cch-container space-y-8">
-          {pageId !== "courses-offered" && pageId !== "foreword-by-principal" && pageId !== "aim-objective" ? (
+          {pageId !== "courses-offered" && pageId !== "foreword-by-principal" && pageId !== "aim-objective" && pageId !== "overview-of-cch" && pageId !== "campus-at-a-glance" && pageId !== "facilities" && pageId !== "current-administration" ? (
             <PageQuickLinks links={relatedLinks} />
           ) : null}
 
@@ -196,6 +196,327 @@ const InfoPage = () => {
                 </Link>
               </div>
               {/* Quick links intentionally removed for this page */}
+            </div>
+          ) : pageId === "aim-objective" ? (
+            <div className="page-surface p-6 md:p-8 space-y-8">
+              <div className="max-w-4xl space-y-6">
+                <div>
+                  <h2 className="text-2xl font-bold text-cch-dark-text mb-3">Aims:</h2>
+                  <p className="text-cch-body-text leading-relaxed">
+                    To cultivate intellectually robust, morally upright, and physically fit individuals who embody excellence in academics, character, discipline, and leadership. Cadet College Hasanabdal aspires to shape its students into 21st century global leaders, university-ready, life-ready, and committed to serving Pakistan and humanity with integrity, courage and purpose.
+                  </p>
+                </div>
+
+                <div>
+                  <h2 className="text-2xl font-bold text-cch-dark-text mb-4">Objectives:</h2>
+                  <ul className="space-y-3 list-disc list-inside text-cch-body-text">
+                    <li><strong>Academic Excellence:</strong> To provide high-quality, globally benchmarked education that fosters critical thinking, creativity, and problem-solving in line with national and international standards.</li>
+                    <li><strong>Leadership Development:</strong> To instill leadership qualities and a strong sense of responsibility through structured training, student governance, and co-curricular engagement.</li>
+                    <li><strong>Character Building:</strong> To promote integrity, resilience, humility, and respect for diversity through a values-driven environment grounded in universal principles.</li>
+                    <li><strong>Physical and Mental Wellbeing:</strong> To ensure the physical fitness and mental resilience of cadets through a balanced regimen of sports, military drills, outdoor training, and wellness programs.</li>
+                    <li><strong>Discipline and Self-Management:</strong> To inculcate habits of discipline, time management, self-management, and self-reliance essential for personal and professional success.</li>
+                    <li><strong>Technology and Innovation:</strong> To integrate modern tools, digital literacy, and innovation into teaching and learning, preparing cadets for a rapidly evolving world.</li>
+                    <li><strong>Service to Nation:</strong> To inspire cadets to serve Pakistan and humanity through their chosen fields of influence, with unwavering loyalty and commitment.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          ) : pageId === "campus-at-a-glance" ? (
+            <div className="page-surface p-6 md:p-8 space-y-6">
+              <div className="max-w-4xl space-y-6">
+                <div>
+                  <h2 className="text-2xl font-bold text-cch-dark-text mb-4">Campus Virtual Tour</h2>
+                  <div className="space-y-4 text-cch-body-text leading-relaxed">
+                    <p>
+                      Cadet College Hasanabdal is spread over more than 100 acres. It is bounded in the North by the Grand Trunk Road, presently called National Highway 5, which separates it from the historical city of Hassan Abdal which also covers its eastern area. To the South is the Haro River which is overlooked by a range of hills that provide a scenic background to the campus. The western fringe of the College, once vast open fields, are now rapidly being converted into housing schemes.
+                    </p>
+                    
+                    <p>
+                      The Campus itself is an optimum mix of open spaces and clusters of buildings and can be divided into three parts. The central part of the campus is organized around the Oval; the main Cricket ground which serves multiple purposes. The Oval is surrounded in the North by majestic Ayub Block in which all academic facilities are located. To the East and West of the Oval are the Wings; the nomenclature used in CCH for Cadets' hostels. To the South of the Oval are the Squash Courts, the Gym, the Swimming Pool, the Café and the Mess Halls.
+                    </p>
+                    
+                    <p>
+                      To the North-west of Ayub Block is the Administration Block housing the offices of the Principal and his staff. To the West of the Administration Block is the Main College Mosque. The Ayub Block has vast lawns in front of it which separate it from the building housing the Center for Wider Curriculum, the Staff Room, the Stationery Store, and the Hobbies Block. To the East of the Academics Block is the Faculty Residential area comprising of three multi-storied apartments. Between the residential complex and Ayub Block is the Staff Club which has Guest Rooms and Tennis Courts. In front of the Academic Block lies N. D. Hassan Square, which once featured a central fountain and was one of the proposed sites for the Shuhada Monument before its construction near the main gate in 2003.
+                    </p>
+                    
+                    <p>
+                      The Western area of the campus comprises the 16-beds College Hospital with assorted medical amenities, Bungalows for senior faculty members and lush sports grounds. To the south of the sports grounds is located the Staff Colony. The area further West of this is earmarked as land for expansion which aims to replicate the area around the Oval and, once completed, will double the strength of the students. Currently it houses the Riding Club.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ) : pageId === "facilities" ? (
+            <div className="page-surface p-6 md:p-8 space-y-8">
+              <div className="max-w-4xl">
+                <h2 className="text-2xl font-bold text-cch-dark-text mb-6">World Class Teaching, Learning & Boarding Facilities</h2>
+                
+                <p className="text-cch-body-text leading-relaxed mb-8">
+                  The College is spread over an area of 86 acres. This includes a huge Academic Block that stands at a higher level, overlooking the six wings or hostels that are lying behind it, on a slanting slope, namely, Jinnah, Haider, Iqbal, Omar, Liaqat and Aurangzeb. On the far end of Academics Block, lies the swimming pool and just beside it is the College mess, which consists of two big halls. There is a College cafeteria and bakery just behind the mess. The College has big playing fields and games played on these grounds include cricket, hockey, football, basketball, volleyball. Furthermore, swimming is held seasonally, whereas horse riding is a convention in CCH that is held almost throughout the year.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Hostels</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The college comprises six hostels built around an oval. Each hostel hosts about 90 cadets. It is supervised by a House Master, an Assistant House Master, a House Tutor & an Assistant House Tutor. Evening preps enhance the effect of boarding and the House Staff render great services in guiding the boarding cadets. Each hostel will soon have ten latest computers with hi-speed internet WIFI connection. The facilities of washing, ironing & cleaning are available to all the cadets. Social evenings & dinner nights heighten the effect of boarding life.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Sports Fields</h3>
+                  <p className="text-sm text-cch-body-text">
+                    Afternoon games, regular drill and physical training are compulsory for all the cadets. The college is well equipped with a number of playing fields including cricket, hockey and soccer fields. Moreover, six basketball and two volleyball courts cater to the cadets' needs. Besides these facilities, individual enrollments for games such as lawn tennis and squash are available for the staff and cadets.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Swimming</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The college swimming pool measures 100×200 meters allowing coaching of swimming in a more professional and confident way. The shallow section is 4 feet deep while the deep section is 13 feet deep. Inter-wing Swimming competitions are held annually. Organized swimming practice continues throughout the summer term. Expert staff along with an officer remain on duty during swimming practice to ensure maximum utility of this facility.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Riding</h3>
+                  <p className="text-sm text-cch-body-text">
+                    Riding is a permanent feature of the life in Cadet College Hasanabdal. Trained military staff is available for those who aspire to gallop. This club provides support and encouragement to young riders who not only learn the basics of riding but also show their talents in riding on various events taking place in college.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Gymnasium</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The health and fitness issues are our utmost priority which is met through a health and fitness centre. The college gymnasium is furnished with latest exercise equipment and our trained staff who guide the cadets to the right strength training techniques. Cadets can review their own strengths and utilize this facility as per need.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Mess</h3>
+                  <p className="text-sm text-cch-body-text">
+                    Two dining halls meet the dining needs of the cadets each with a capacity of hosting 250 cadets each. Our highly trained staff and a variety of cuisine make life at college an entirely different experience.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Mosque</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The College Mosque is the center of all religious activities. It has the capacity to accommodate about 1000 Namazies at a time. Besides the daily 5 times prayers, Jumma Prayers, Tarawih Prayers in Ramadan and Eid Prayers are also offered in this beautiful mosque. Moreover, other religious functions like Eid-Milad-un-Nabi, Shab-e-Barat, 27 Ramadan-ul-Mubarak etc are also performed here. A regular Khateeb and Moazzan (both Hafiz e Quraan) have been appointed to fulfill these needs.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Hospital</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The College Hospital has eighteen beds ward for the Cadets. It is looked after by a College resident Medical Officer who is assisted by other medical staff. All minor ailments are treated at the hospital but for specialized treatment and in case of serious illness or injury the patients are referred to appropriate medical facilities according to the entitlement of the Cadet's parents.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Library</h3>
+                  <p className="text-sm text-cch-body-text">
+                    Library is a resource centre for all types of learning and research purposes. The college library has a huge stock of books almost on all subjects. The librarian plays the role of a learning facilitator. Furthermore hi-speed internet helps learning far easier and faster. In addition, E-book bank in future will look after the individual needs of the cadets more precisely to broader spectrum.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Electricity Backup</h3>
+                  <p className="text-sm text-cch-body-text">
+                    A heavy, automatic and efficient generator meets the needs of power crisis thus providing electricity to the whole college at need times.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Security System</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The college is completely secured and well guarded through an efficient security system. The safety and security of the cadets is our first rated priority. Every effort has been made to ensure foolproof security and further efforts are in the pipeline.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">High Speed Internet</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The College has got 100 MBPs Fiber Optic internet connection. The whole Education Block, all the 6 hostels and the houses of Faculty Members are connected through Fiber Optic/Cat 6 Cables to benefit from this high speed internet.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Language Lab</h3>
+                  <p className="text-sm text-cch-body-text">
+                    A new Language Lab has been setup in the Academic Block. The lab is fully supported with the latest computers. It is equipped with high speed wi-fi internet and multimedia facilities. Licensed Berlitz software has been installed and the lab is fully functional.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Computer Lab</h3>
+                  <p className="text-sm text-cch-body-text">
+                    The College has a spacious, well-equipped and Air-Conditioned Computer Lab situated in Ayub Block. The Lab is equipped with thirty five P-IV Dual Core computers for students and one for office work; all connected to the Main Server and provide full multimedia support. It also provides the facility of shared Printers and Scanners. Multimedia Projectors are also installed in the Lab to make the lectures more interesting and interactive.
+                  </p>
+                </div>
+
+                <div className="page-surface p-6 space-y-3">
+                  <h3 className="text-lg font-bold text-cch-dark-text">Bio Lab</h3>
+                  <p className="text-sm text-cch-body-text">
+                    Bio Lab is a facility that provides controlled conditions in which scientific research, experiments, and measurement may be performed. The Biology lab is a staple of most high school/Colleges curriculum. Students learn not only about nature and evolution, but also about the scientific process and proper procedure for conducting experiments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : pageId === "current-administration" ? (
+            <div className="page-surface p-6 md:p-8 space-y-8">
+              <div className="max-w-4xl">
+                <h2 className="text-2xl font-bold text-cch-dark-text mb-4">Leadership Team</h2>
+                <p className="text-cch-body-text leading-relaxed">
+                  The administration ensures policy execution, student welfare, and operational efficiency to sustain a high-performance learning environment.
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="page-surface p-6 space-y-4 text-center">
+                  <div className="w-full aspect-square rounded-sm overflow-hidden">
+                    <img src="/images/thumbnail.png" alt="Staff Photo" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-cch-dark-text mb-1">Staff Name</h3>
+                    <p className="text-sm text-cch-green font-semibold mb-2">Position/Title</p>
+                    <p className="text-xs text-cch-body-text mb-3">Office Location</p>
+                    <div className="space-y-1 text-xs">
+                      <p className="text-cch-body-text">
+                        <a href="tel:+923195551000" className="hover:text-cch-green">
+                          0319-555-1000
+                        </a>
+                      </p>
+                      <p className="text-cch-body-text">
+                        <a href="mailto:staff@cch.edu.pk" className="hover:text-cch-green">
+                          staff@cch.edu.pk
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="page-surface p-6 space-y-4 text-center">
+                  <div className="w-full aspect-square rounded-sm overflow-hidden">
+                    <img src="/images/thumbnail.png" alt="Staff Photo" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-cch-dark-text mb-1">Staff Name</h3>
+                    <p className="text-sm text-cch-green font-semibold mb-2">Position/Title</p>
+                    <p className="text-xs text-cch-body-text mb-3">Office Location</p>
+                    <div className="space-y-1 text-xs">
+                      <p className="text-cch-body-text">
+                        <a href="tel:+923195551000" className="hover:text-cch-green">
+                          0319-555-1000
+                        </a>
+                      </p>
+                      <p className="text-cch-body-text">
+                        <a href="mailto:staff@cch.edu.pk" className="hover:text-cch-green">
+                          staff@cch.edu.pk
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="page-surface p-6 space-y-4 text-center">
+                  <div className="w-full aspect-square rounded-sm overflow-hidden">
+                    <img src="/images/thumbnail.png" alt="Staff Photo" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-cch-dark-text mb-1">Staff Name</h3>
+                    <p className="text-sm text-cch-green font-semibold mb-2">Position/Title</p>
+                    <p className="text-xs text-cch-body-text mb-3">Office Location</p>
+                    <div className="space-y-1 text-xs">
+                      <p className="text-cch-body-text">
+                        <a href="tel:+923195551000" className="hover:text-cch-green">
+                          0319-555-1000
+                        </a>
+                      </p>
+                      <p className="text-cch-body-text">
+                        <a href="mailto:staff@cch.edu.pk" className="hover:text-cch-green">
+                          staff@cch.edu.pk
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="page-surface p-6 space-y-4 text-center">
+                  <div className="w-full aspect-square rounded-sm overflow-hidden">
+                    <img src="/images/thumbnail.png" alt="Staff Photo" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-cch-dark-text mb-1">Staff Name</h3>
+                    <p className="text-sm text-cch-green font-semibold mb-2">Position/Title</p>
+                    <p className="text-xs text-cch-body-text mb-3">Office Location</p>
+                    <div className="space-y-1 text-xs">
+                      <p className="text-cch-body-text">
+                        <a href="tel:+923195551000" className="hover:text-cch-green">
+                          0319-555-1000
+                        </a>
+                      </p>
+                      <p className="text-cch-body-text">
+                        <a href="mailto:staff@cch.edu.pk" className="hover:text-cch-green">
+                          staff@cch.edu.pk
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="page-surface p-6 space-y-4 text-center">
+                  <div className="w-full aspect-square rounded-sm overflow-hidden">
+                    <img src="/images/thumbnail.png" alt="Staff Photo" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-cch-dark-text mb-1">Staff Name</h3>
+                    <p className="text-sm text-cch-green font-semibold mb-2">Position/Title</p>
+                    <p className="text-xs text-cch-body-text mb-3">Office Location</p>
+                    <div className="space-y-1 text-xs">
+                      <p className="text-cch-body-text">
+                        <a href="tel:+923195551000" className="hover:text-cch-green">
+                          0319-555-1000
+                        </a>
+                      </p>
+                      <p className="text-cch-body-text">
+                        <a href="mailto:staff@cch.edu.pk" className="hover:text-cch-green">
+                          staff@cch.edu.pk
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="page-surface p-6 space-y-4 text-center">
+                  <div className="w-full aspect-square bg-gradient-to-br from-cch-light-gray to-gray-200 rounded-sm flex items-center justify-center">
+                    <span className="text-cch-body-text text-sm">Staff Photo</span>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-bold text-cch-dark-text mb-1">Staff Name</h3>
+                    <p className="text-sm text-cch-green font-semibold mb-2">Position/Title</p>
+                    <p className="text-xs text-cch-body-text mb-3">Office Location</p>
+                    <div className="space-y-1 text-xs">
+                      <p className="text-cch-body-text">
+                        <a href="tel:+923195551000" className="hover:text-cch-green">
+                          0319-555-1000
+                        </a>
+                      </p>
+                      <p className="text-cch-body-text">
+                        <a href="mailto:staff@cch.edu.pk" className="hover:text-cch-green">
+                          staff@cch.edu.pk
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="text-center">
+                <p className="text-sm text-cch-body-text">
+                  More staff information can be added by updating the staff data in the admin section.
+                </p>
+              </div>
             </div>
           ) : (
             <>

@@ -24,8 +24,8 @@ export const infoPages: Record<string, InfoPageContent> = {
       "Continuous mentoring and wider-curriculum activities build confidence, integrity, and service-oriented citizenship.",
       "Preparation for leadership roles in both military and civilian life with an international outlook.",
     ],
-    ctaLabel: "Aim & Objective",
-    ctaHref: "/info/aim-objective",
+    ctaLabel: "Overview of CCH",
+    ctaHref: "/info/overview-of-cch",
   },
   "aim-objective": {
     title: "Aim & Objective",
@@ -44,8 +44,8 @@ export const infoPages: Record<string, InfoPageContent> = {
       "Technology and Innovation: Integrate modern tools, digital literacy, and innovation into teaching and learning to prepare cadets for a rapidly evolving world.",
       "Service to Nation: Inspire cadets to serve Pakistan and humanity through their chosen fields of influence, with unwavering loyalty and commitment.",
     ],
-    ctaLabel: "History",
-    ctaHref: "/info/history",
+    ctaLabel: "Overview of CCH",
+    ctaHref: "/info/overview-of-cch",
   },
   history: {
     title: "History",
@@ -61,7 +61,26 @@ export const infoPages: Record<string, InfoPageContent> = {
     ctaLabel: "View Campus Life",
     ctaHref: "/campus-life",
   },
-  
+  "overview-of-cch": {
+    title: "Overview of CCH",
+    subtitle: "Aims and Objectives",
+    overview:
+      "To cultivate intellectually robust, morally upright, and physically fit individuals who embody excellence in academics, character, discipline, and leadership. Cadet College Hasanabdal aspires to shape its students into 21st century global leaders, university-ready, life-ready, and committed to serving Pakistan and humanity with integrity, courage and purpose.",
+    sectionIntro:
+      "The college pursues a values-driven education that balances academic rigour with character development, leadership training, physical fitness, and technological readiness. The following objectives guide our institutional programmes and student experiences.",
+    highlights: ["Academic Excellence", "Leadership Development", "Character Building"],
+    points: [
+      "Academic Excellence: To provide high-quality, globally benchmarked education that fosters critical thinking, creativity, and problem-solving in line with national and international standards.",
+      "Leadership Development: To instill leadership qualities and a strong sense of responsibility through structured training, student governance, and co-curricular engagement.",
+      "Character Building: To promote integrity, resilience, humility, and respect for diversity through a values-driven environment grounded in universal principles.",
+      "Physical and Mental Wellbeing: To ensure the physical fitness and mental resilience of cadets through a balanced regimen of sports, military drills, outdoor training, and wellness programmes.",
+      "Discipline and Self-Management: To inculcate habits of discipline, time management, self-reliance and personal accountability essential for personal and professional success.",
+      "Technology and Innovation: To integrate modern tools, digital literacy, and innovation into teaching and learning, preparing cadets for a rapidly evolving world.",
+      "Service to Nation: To inspire cadets to serve Pakistan and humanity through their chosen fields of influence, with unwavering loyalty and commitment.",
+    ],
+    ctaLabel: "Aim & Objective",
+    ctaHref: "/info/aim-objective",
+  },
   "founder-principal": {
     title: "Founder Principal",
     subtitle: "Commemorating the educational vision that shaped CCH.",
@@ -89,48 +108,6 @@ export const infoPages: Record<string, InfoPageContent> = {
     ],
     ctaLabel: "See Current Administration",
     ctaHref: "/info/current-administration",
-  },
-  "board-of-governors": {
-    title: "Board of Governors",
-    subtitle: "Governance framework supporting institutional excellence.",
-    overview:
-      "The board provides strategic oversight and long-term direction to ensure quality, accountability, and responsible expansion.",
-    highlights: ["Strategic oversight", "Policy support", "Quality governance"],
-    points: [
-      "Board supervision strengthens planning and policy implementation.",
-      "Regular governance reviews support transparent decision-making.",
-      "Institutional priorities align with educational excellence and continuity.",
-    ],
-    ctaLabel: "Official Members",
-    ctaHref: "/info/official-members",
-  },
-  "official-members": {
-    title: "Official Members",
-    subtitle: "Institutional officeholders serving on governance boards.",
-    overview:
-      "Official members represent key administrative and policy roles that contribute to governance, compliance, and institutional planning.",
-    highlights: ["Policy representation", "Administrative leadership", "Governance support"],
-    points: [
-      "Official representation ensures stronger operational coordination.",
-      "Members guide strategic and regulatory alignment.",
-      "Collaborative reviews support timely policy execution.",
-    ],
-    ctaLabel: "Non-Official Members",
-    ctaHref: "/info/non-official-members",
-  },
-  "non-official-members": {
-    title: "Non-Official Members",
-    subtitle: "External and independent contributors to board deliberation.",
-    overview:
-      "Non-official members provide diverse insights and objective perspectives that strengthen strategic dialogue and long-term planning.",
-    highlights: ["External perspective", "Independent guidance", "Balanced strategy"],
-    points: [
-      "Independent voices support broader institutional reflection.",
-      "Collaborative governance ensures well-rounded decision frameworks.",
-      "Stakeholder perspectives enrich future-focused planning.",
-    ],
-    ctaLabel: "Back to Board",
-    ctaHref: "/info/board-of-governors",
   },
   "campus-at-a-glance": {
     title: "Campus at a Glance",
@@ -176,101 +153,84 @@ export const infoPages: Record<string, InfoPageContent> = {
   },
   "courses-offered": {
     title: "Courses Offered",
-    subtitle: "Academic streams and subject combinations offered at CCH.",
-    overview:
-      "The college offers a focused mix of O-Level and A-Level pathways so cadets can align subject selection with future university and career goals.",
-    highlights: ["Science and humanities", "Board-aligned subjects", "Stream guidance"],
-    points: [
-      "Science options include combinations for medical, engineering, and computer science pathways.",
-      "Humanities and social science choices support broader university and professional routes.",
-      "Faculty guidance helps cadets select subjects that match aptitude and long-term plans.",
-    ],
-    ctaLabel: "Admission Help",
-    ctaHref: "/contact",
+    subtitle: "",
+    overview: "",
+    highlights: [],
+    points: [],
+    ctaLabel: "",
+    ctaHref: "",
   },
   "admission-intake": {
     title: "Admission Intake",
-    subtitle: "Entry classes, intake cycles, and seat planning overview.",
-    overview:
-      "Admission intakes are managed through transparent timelines and merit-based processes for each eligible class and program stream.",
-    highlights: ["Structured cycles", "Merit process", "Class-wise entries"],
-    points: [
-      "Entry windows are announced in alignment with annual academic planning.",
-      "Candidates are shortlisted based on exam and assessment criteria.",
-      "Final selections follow documented merit and interview outcomes.",
-    ],
-    ctaLabel: "Online Admissions",
-    ctaHref: "/admissions",
+    subtitle: "",
+    overview: "",
+    highlights: [],
+    points: [],
+    ctaLabel: "",
+    ctaHref: "",
   },
   "admission-to-class-a-level": {
     title: "Admission to Class A-Level",
-    subtitle: "Entry process and requirements for A-Level intake.",
+    subtitle: "Entry requirements, process and important dates for A-Level intake.",
     overview:
-      "A-Level admissions focus on academic readiness, subject compatibility, and aptitude to ensure successful progression in advanced studies.",
-    highlights: ["Advanced entry", "Eligibility screening", "Merit shortlist"],
+      "Admission to Class A-Level seeks academically prepared candidates with a solid subject foundation and readiness for a residential advanced-study environment. Selection is based on prior academic record, a written assessment, and an interview.",
+    sectionIntro:
+      "This page provides eligibility criteria, application steps, assessment format, document checklist, and post-selection instructions for A-Level applicants.",
+    highlights: ["Eligibility & age guidance", "Written assessment & interview", "Document checklist"],
     points: [
-      "Applicants are assessed for prior performance and learning readiness.",
-      "Selection includes test and interview stages where applicable.",
-      "Merit outcomes are shared with joining and orientation guidance.",
+      "Applicants should have completed relevant secondary qualifications (O-Levels / SSC or equivalent) with strong results in core subjects.",
+      "Typical age range for A-Level intake is the late-teen years; specific limits are published with each intake notice.",
+      "Shortlisting is based on prior results followed by a written admissions test and an interview where applicable.",
+      "Submit certified copies of academic transcripts, identity documents, passport-size photographs, and any other documents requested in the admission notice.",
+      "Successful candidates are required to confirm their place by the published deadline and follow reporting instructions for orientation and fee payment.",
     ],
-    ctaLabel: "See Exam Preparation",
-    ctaHref: "/info/exam-preparation",
+    ctaLabel: "Apply Online",
+    ctaHref: "/admissions",
   },
   "admission-to-class-o-level": {
     title: "Admission to Class O-Level",
-    subtitle: "Entry route for foundational O-Level academic track.",
+    subtitle: "Entry requirements and process for O-Level intake.",
     overview:
-      "The O-Level entry stream prepares students through a strong conceptual base, structured routine, and continuous mentoring support.",
-    highlights: ["Foundational track", "Structured onboarding", "Mentored learning"],
+      "Admission to Class O-Level is designed for candidates ready to join the foundational secondary track; selection prioritizes academic aptitude, behavioural fit for residential life, and potential for steady progress.",
+    sectionIntro:
+      "This page outlines eligibility, application steps, the assessment format, document checklist, and guidance for parents and applicants for O-Level admissions.",
+    highlights: ["Eligibility & age guidance", "Assessment & interview", "Onboarding guidance"],
     points: [
-      "Admissions prioritize aptitude and readiness for residential learning.",
-      "Onboarding includes academic and discipline orientation.",
-      "Cadets receive regular progress support from faculty and house staff.",
+      "Applicants should present prior school records showing consistent academic performance in core subjects.",
+      "Age limits for each intake are stated in the official notice; please consult the current intake announcement.",
+      "Shortlisting may include a basic written assessment and an interview with college staff to evaluate readiness for boarding school routines.",
+      "Required documents typically include academic transcripts, birth certificate/B-Form, guardian ID, and passport-size photographs.",
+      "Selected cadets must complete admission formalities, fee payment, and medical checks before reporting on the scheduled orientation date.",
     ],
-    ctaLabel: "Admission Timeline",
+    ctaLabel: "Apply Online",
     ctaHref: "/admissions",
   },
   "exam-preparation": {
     title: "Exam Preparation",
-    subtitle: "Structured preparation support for entrance testing.",
-    overview:
-      "The preparation pathway includes subject guidance, model assessments, and strategy sessions designed for confident performance.",
-    highlights: ["Syllabus alignment", "Practice modules", "Assessment strategy"],
-    points: [
-      "Preparation plans cover core areas tested in entry assessments.",
-      "Mock testing supports time management and confidence building.",
-      "Mentoring sessions address exam patterns and common challenges.",
-    ],
-    ctaLabel: "View Syllabus",
-    ctaHref: "/info/syllabus-for-entry-exam",
+    subtitle: "",
+    overview: "",
+    highlights: [],
+    points: [],
+    ctaLabel: "",
+    ctaHref: "",
   },
   "syllabus-for-entry-exam": {
     title: "Syllabus for Entry Exam",
-    subtitle: "Subject areas and preparation scope for applicants.",
-    overview:
-      "The exam syllabus outlines key competencies expected from candidates across core subjects and reasoning modules.",
-    highlights: ["Core subjects", "Reasoning focus", "Class-specific scope"],
-    points: [
-      "Applicants should review topic coverage by class entry category.",
-      "Practice exercises help improve speed and conceptual accuracy.",
-      "Parents can support planning using weekly preparation schedules.",
-    ],
-    ctaLabel: "Admissions Support",
-    ctaHref: "/contact",
+    subtitle: "",
+    overview: "",
+    highlights: [],
+    points: [],
+    ctaLabel: "",
+    ctaHref: "",
   },
   "fee-structure": {
     title: "Fee Structure",
-    subtitle: "Monthly fee, extra expenses, and payment guidance.",
-    overview:
-      "The fee schedule is issued with yearly planning in mind and is normally charged quarterly in advance, with clear notes on additional expenses and payment deadlines.",
-    highlights: ["Quarterly billing", "Annual revisions", "Late payment policy"],
-    points: [
-      "The monthly fee is announced as a tentative structure for the relevant academic year.",
-      "Extra charges may apply for clothing, books, stationery, travel, postage, photographs, and similar personal expenses.",
-      "Late payments can attract daily fines and, if overdue amounts remain unresolved, further administrative penalties.",
-    ],
-    ctaLabel: "General Instructions",
-    ctaHref: "/info/general-instructions",
+    subtitle: "",
+    overview: "",
+    highlights: [],
+    points: [],
+    ctaLabel: "",
+    ctaHref: "",
   },
   "academic-excellence": {
     title: "Academic Excellence",
@@ -620,7 +580,7 @@ export const infoPages: Record<string, InfoPageContent> = {
       "Archives support community engagement and historical continuity.",
     ],
     ctaLabel: "Latest News",
-    ctaHref: "/news",
+    ctaHref: "/explore",
   },
   "calendar-of-events": {
     title: "Calendar of Events",
@@ -634,7 +594,7 @@ export const infoPages: Record<string, InfoPageContent> = {
       "Published schedules improve operational readiness and participation.",
     ],
     ctaLabel: "Campus Notices",
-    ctaHref: "/news",
+    ctaHref: "/explore",
   },
   "mess-menu": {
     title: "Mess Menu",
@@ -677,54 +637,6 @@ export const infoPages: Record<string, InfoPageContent> = {
     ],
     ctaLabel: "Campus Life",
     ctaHref: "/campus-life",
-  },
-  "cch-scholarships": {
-    title: "CCH Scholarships",
-    subtitle: "Merit support and need-based financial assistance.",
-    overview:
-      "Scholarships at CCH recognize excellence and help deserving cadets continue their education with dignity, supported by both merit-based awards and need-based assistance.",
-    sectionIntro:
-      "This page mirrors the institutional scholarship framework used to balance merit recognition with compassionate support for cadets who need it most.",
-    highlights: ["Merit awards", "Need-based aid", "Transparent review"],
-    points: [
-      "Merit scholarships are awarded to top performers after internal and external assessments.",
-      "Need-based support is reviewed carefully through documented applications and financial screening.",
-      "Scholarship decisions are made within an accountable institutional process and are not guaranteed for every applicant.",
-    ],
-    ctaLabel: "Endowment Support",
-    ctaHref: "/endowment-fund",
-  },
-  "nust-scholarships": {
-    title: "NUST Scholarships",
-    subtitle: "Guidance for cadets aiming for university scholarship pathways.",
-    overview:
-      "NUST-focused scholarship guidance supports cadets with academic planning, entry-test preparation, and application readiness for competitive higher education opportunities.",
-    sectionIntro:
-      "The emphasis is on helping cadets understand scholarship expectations, exam strategy, and document preparation before they apply.",
-    highlights: ["University readiness", "Test preparation", "Application guidance"],
-    points: [
-      "Cadets receive counseling on eligibility, subject selection, and test timelines.",
-      "Preparation support can include practice assessments, interview readiness, and document checklists.",
-      "The guidance cell helps students connect scholarship planning with their wider academic goals.",
-    ],
-    ctaLabel: "Guidance Cell",
-    ctaHref: "/info/guidance-placement-cell",
-  },
-  "general-instructions": {
-    title: "General Instructions",
-    subtitle: "Campus discipline, student conduct, and daily life rules.",
-    overview:
-      "General instructions define the practical routines and discipline standards that guide cadet life, welfare, and orderly conduct across the campus.",
-    sectionIntro:
-      "This section summarizes the major rules that are usually shared with cadets and parents at the start of every academic cycle.",
-    highlights: ["Discipline rules", "Cadet welfare", "Campus conduct"],
-    points: [
-      "Cadets are not permitted to keep unauthorized electronic items, drugs, weapons, or other prohibited materials in the wings.",
-      "Serious offences such as cheating, misconduct, disobedience, smoking, or repeated indiscipline can lead to withdrawal or expulsion.",
-      "Pocket money, visitor access, weekend leave, telephone calls, correspondence, and journey arrangements all follow official college rules.",
-    ],
-    ctaLabel: "Rules & Regulations",
-    ctaHref: "/info/rules-regulations",
   },
   "group-photograph": {
     title: "Group Photograph",

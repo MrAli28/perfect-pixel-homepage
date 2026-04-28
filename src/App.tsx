@@ -10,7 +10,6 @@ import Admissions from "./pages/Admissions";
 import Academics from "./pages/Academics";
 import Faculty from "./pages/Faculty";
 import CampusLife from "./pages/CampusLife";
-import News from "./pages/News";
 import Contact from "./pages/Contact";
 import Explore from "./pages/Explore";
 import WiderCurriculum from "./pages/WiderCurriculum";
@@ -41,7 +40,6 @@ const App = () => (
             <Route path="/faculty" element={<Faculty />} />
             <Route path="/campus-life" element={<CampusLife />} />
             <Route path="/career" element={<Career />} />
-            <Route path="/news" element={<News />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/info/:pageId" element={<InfoPage />} />
             <Route path="/foreword-by-the-principal" element={<Navigate to="/info/foreword-by-principal" replace />} />

@@ -2,7 +2,7 @@ const instructors = [
   {
     name: "Syed Alamdar Hussain Shah",
     role: "Founder, Bahar Cadet School (BCS)",
-    img: "/images/principal.jpg",
+    img: "/images/group-picture.jpg",
     bio: "A distinguished Pakistan Army veteran who trained thousands of officers and received a United Nations performance medal for exemplary service.",
   },
   {

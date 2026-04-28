@@ -38,7 +38,7 @@ const WelcomeSection = () => {
             {/* Blue bottom-right accent */}
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#174606] z-0" />
             <img
-              src="/images/principal.jpg"
+              src="/images/group-picture.jpg"
               alt="Bahar Cadet School leadership"
               className="relative z-10 w-full object-cover shadow-lg"
             />

@@ -38,7 +38,6 @@ const Explore = () => {
               { label: "Academics", href: "/academics" },
               { label: "Campus Life", href: "/campus-life" },
               { label: "Faculty", href: "/faculty" },
-              { label: "News", href: "/news" },
             ]}
           />
 

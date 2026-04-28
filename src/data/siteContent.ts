@@ -32,16 +32,9 @@ export const navMegaMenus: MegaMenu[] = [
         label: "History", 
         href: "/info/history",
         children: [
+          { label: "Overview of CCH", href: "/info/overview-of-cch" },
           { label: "Founder Principal", href: "/info/founder-principal" },
           { label: "Principals of CCH", href: "/info/principals-of-cch" },
-        ]
-      },
-      { 
-        label: "Board of Governors", 
-        href: "/info/board-of-governors",
-        children: [
-          { label: "Official Members", href: "/info/official-members" },
-          { label: "Non-Official Members", href: "/info/non-official-members" },
         ]
       },
       { 
@@ -56,10 +49,6 @@ export const navMegaMenus: MegaMenu[] = [
         label: "Current Administration", 
         href: "/info/current-administration" 
       },
-      { 
-        label: "News", 
-        href: "/news" 
-      },
     ],
   },
   {
@@ -72,18 +61,6 @@ export const navMegaMenus: MegaMenu[] = [
       { 
         label: "Courses Offered", 
         href: "/info/courses-offered" 
-      },
-      { 
-        label: "CCH Scholarships", 
-        href: "/info/cch-scholarships" 
-      },
-      { 
-        label: "NUST Scholarships", 
-        href: "/info/nust-scholarships" 
-      },
-      { 
-        label: "General Instructions", 
-        href: "/info/general-instructions" 
       },
       { 
         label: "Admission Intake", 
@@ -318,7 +295,6 @@ export const navDropdownGroups: NavGroup[] = [
     title: "Information",
     links: [
       { label: "About", href: "/about" },
-      { label: "News", href: "/news" },
       { label: "Contact", href: "/contact" },
     ],
   },
