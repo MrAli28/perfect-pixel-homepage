@@ -1,32 +1,48 @@
 const WelcomeSection = () => {
   return (
-    <section className="py-20 bg-background">
-      <div className="cch-container">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="py-20 bg-gray-100 relative overflow-hidden">
+      {/* Faded background watermark */}
+      <div className="absolute inset-0 bg-[url('/images/faculty-banner.jpg')] bg-cover bg-center opacity-10 pointer-events-none" />
+
+      <div className="cch-container relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Text */}
           <div>
-            <h2 className="cch-section-title mb-6">
-              <span className="font-bold">Welcome to Excellence & Heritage</span>
+            <h2 className="text-3xl md:text-4xl font-bold font-lufga text-cch-dark-text mb-6">
+              Introduction to Bahar Cadet School (BCS)
             </h2>
             <p className="text-cch-body-text leading-relaxed text-[15px] mb-6">
-              Cadet College Hasanabdal, being the first institution of its kind in Pakistan, has been a trend-setter in
-              the field of quality boarding schools meant for boys. In its history of over sixty years, its graduates
-              have not only contributed tremendously in the national mainstream, but many have also moved across
-              frontiers, and are now playing their roles at the global level. Above all, being a trailblazer, the
-              institution has helped set the blueprints of a milliard of institutions, which have followed in its wake.
+              Welcome to Bahar Cadet School (BCS), where excellence meets discipline. At BCS, we are committed to
+              preparing our students for the prestigious military colleges of Pakistan, including Military College
+              Murree, Military College Jhelum, PAF Sargodha, and Military College Sui. Our dedicated team works
+              tirelessly day and night to ensure our students achieve success in these highly competitive exams.
             </p>
-            <p className="text-cch-dark-text font-semibold text-sm mb-1">
-              Brig Nasir Saeed Khattak (Retd), SI(M) – Principal & Alumni
+            <p className="text-cch-body-text leading-relaxed text-[15px] mb-6">
+              BCS is more than just a school; it is a nurturing ground for future leaders. We focus on a rigorous
+              academic curriculum combined with physical training and character development, instilling values of
+              integrity, discipline, and patriotism in our students. Our holistic approach ensures that our cadets are
+              academically, mentally, and physically prepared to take on the challenges of military life.
             </p>
-            <p className="text-cch-body-text text-sm mb-6">Cadet College Hasanabdal</p>
-            <a href="#" className="cch-btn-primary">
-              Read More
+            <p className="text-cch-dark-text font-bold text-sm mb-1">Bahar Cadet School (BCS)</p>
+            <p className="text-cch-body-text text-sm mb-8">Excellence, Discipline, and Leadership</p>
+            <a
+              href="#"
+              className="inline-block bg-cch-gold text-cch-dark-text px-8 py-3 text-sm font-bold uppercase tracking-wider hover:brightness-95 transition-all duration-300"
+            >
+              Learn More
             </a>
           </div>
-          <div>
+
+          {/* Image with decorative corners */}
+          <div className="relative">
+            {/* Red top-right accent */}
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-red-600 z-0" />
+            {/* Blue bottom-right accent */}
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-[#174606] z-0" />
             <img
-              src="/images/our-mission.png"
-              alt="Our Mission"
-              className="w-full rounded-sm shadow-lg"
+              src="/images/principal.jpg"
+              alt="Bahar Cadet School leadership"
+              className="relative z-10 w-full object-cover shadow-lg"
             />
           </div>
         </div>

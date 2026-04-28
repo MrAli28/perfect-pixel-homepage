@@ -16,6 +16,7 @@ export default {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
         opensans: ["Open Sans", "sans-serif"],
+        lufga: ["Lufga", "Roboto", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -56,6 +57,7 @@ export default {
         "cch-green": "hsl(var(--cch-green))",
         "cch-green-light": "hsl(var(--cch-green-light))",
         "cch-gold": "hsl(var(--cch-gold))",
+        "cch-gold-light": "hsl(var(--cch-gold-light))",
         "cch-gray": "hsl(var(--cch-gray))",
         "cch-light-gray": "hsl(var(--cch-light-gray))",
         "cch-dark-text": "hsl(var(--cch-dark-text))",

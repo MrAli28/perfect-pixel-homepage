@@ -34,7 +34,7 @@ const CountUp = ({ end }: { end: number }) => {
     return () => clearInterval(timer);
   }, [started, end]);
 
-  return <div ref={ref} className="text-4xl md:text-5xl font-bold font-roboto text-primary-foreground">{count}</div>;
+  return <div ref={ref} className="text-4xl md:text-5xl font-bold font-lufga text-primary-foreground">{count}</div>;
 };
 
 const BottomStats = () => {

@@ -14,11 +14,7 @@ const CountUp = ({ end, suffix = "" }: { end: number; suffix?: string }) => {
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !started) {
-          setStarted(true);
-        }
-      },
+      ([entry]) => { if (entry.isIntersecting && !started) setStarted(true); },
       { threshold: 0.3 }
     );
     if (ref.current) observer.observe(ref.current);
@@ -33,37 +29,46 @@ const CountUp = ({ end, suffix = "" }: { end: number; suffix?: string }) => {
     let current = 0;
     const timer = setInterval(() => {
       current += increment;
-      if (current >= end) {
-        setCount(end);
-        clearInterval(timer);
-      } else {
-        setCount(Math.floor(current));
-      }
+      if (current >= end) { setCount(end); clearInterval(timer); }
+      else setCount(Math.floor(current));
     }, duration / steps);
     return () => clearInterval(timer);
   }, [started, end]);
 
-  return (
-    <div ref={ref} className="cch-stat-number">
-      {count}{suffix}
-    </div>
-  );
+  return <span ref={ref}>{count}{suffix}</span>;
 };
 
 const StatsSection = () => {
   return (
-    <section className="py-16 bg-cch-light-gray">
-      <div className="cch-container">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section
+      className="relative py-36 bg-cover bg-center"
+      style={{ backgroundImage: "url('/images/group-picture.jpg')" }}
+    >
+      {/* Dark navy overlay */}
+      <div className="absolute inset-0 bg-[#174604] opacity-90" />
+
+      <div className="cch-container relative z-10">
+        {/* Stats row */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-0 mb-12">
           {stats.map((stat, i) => (
-            <div key={i}>
-              <CountUp end={stat.value} suffix={stat.suffix} />
-              <p className="text-cch-body-text text-sm mt-2">{stat.label}</p>
+            <div key={i} className="flex items-center gap-4 px-6">
+              <div className="text-white font-bold font-lufga text-7xl leading-none shrink-0">
+                <CountUp end={stat.value} suffix={stat.suffix} />
+                <div className="mt-2 w-full h-[3px] bg-cch-gold" />
+              </div>
+              <div>
+                <p className="text-white text-lg leading-snug">{stat.label}</p>
+              </div>
             </div>
           ))}
         </div>
-        <div className="text-center mt-8">
-          <a href="#" className="cch-btn-primary">
+
+        {/* Button */}
+        <div className="text-center">
+          <a
+            href="#"
+            className="inline-block bg-cch-gold text-cch-dark-text px-10 py-3 text-sm font-bold uppercase tracking-wider hover:brightness-95 transition-all duration-300"
+          >
             School Profile
           </a>
         </div>

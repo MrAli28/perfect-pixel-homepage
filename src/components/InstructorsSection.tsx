@@ -1,8 +1,16 @@
 const instructors = [
-  { name: "Amjad Mahmood Janjua", role: "DVP Academic / HOD Mathematics", img: "https://cch.edu.pk/wp-content/uploads/2021/03/Kaleem-Mustafa-Grey.jpg" },
-  { name: "Ahmd Nadeem Anwar", role: "DVP Student Affairs", img: "https://cch.edu.pk/wp-content/uploads/2021/03/Ahmed.jpg" },
-  { name: "Shaukat Mehmood", role: "Vice Principal/DOS", img: "https://cch.edu.pk/wp-content/uploads/2022/04/Mr.Shaukat-Mahmood-1-700x700.jpg" },
-  { name: "Ali Sikander Khan", role: "Master in Mathematics", img: "https://cch.edu.pk/wp-content/uploads/2022/03/002-700x700.jpg" },
+  {
+    name: "Syed Alamdar Hussain Shah",
+    role: "Founder, Bahar Cadet School (BCS)",
+    img: "/images/principal.jpg",
+    bio: "A distinguished Pakistan Army veteran who trained thousands of officers and received a United Nations performance medal for exemplary service.",
+  },
+  {
+    name: "Syed Amjad Hussain Shah",
+    role: "Director, Bahar Cadet School (BCS)",
+    img: "/images/faculty-banner.jpg",
+    bio: "Leads BCS with academic excellence and a multidimensional training model covering academics, psychology, physical fitness, and mental preparation.",
+  },
 ];
 
 const InstructorsSection = () => {
@@ -10,27 +18,25 @@ const InstructorsSection = () => {
     <section className="py-20 bg-background">
       <div className="cch-container">
         <h2 className="cch-section-title text-center mb-12">
-          <span className="font-bold">Our Skilled Instructors</span>
+          <span className="font-bold">Leadership at Bahar Cadet School</span>
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {instructors.map((inst, i) => (
-            <div key={i} className="text-center group cursor-pointer">
-              <div className="overflow-hidden rounded-sm mb-4">
+            <div key={i} className="group bg-white rounded-sm shadow-sm overflow-hidden border border-gray-100">
+              <div className="overflow-hidden">
                 <img
                   src={inst.img}
                   alt={inst.name}
-                  className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <h3 className="text-sm font-bold text-cch-dark-text font-roboto">{inst.name}</h3>
-              <p className="text-xs text-cch-body-text mt-1">{inst.role}</p>
+              <div className="p-5">
+                <h3 className="text-lg font-bold text-cch-dark-text font-lufga">{inst.name}</h3>
+                <p className="text-sm text-cch-green mt-1 font-semibold">{inst.role}</p>
+                <p className="text-sm text-cch-body-text mt-3 leading-relaxed">{inst.bio}</p>
+              </div>
             </div>
           ))}
-        </div>
-        <div className="text-center mt-10">
-          <a href="#" className="cch-btn-primary">
-            View All Instructors
-          </a>
         </div>
       </div>
     </section>

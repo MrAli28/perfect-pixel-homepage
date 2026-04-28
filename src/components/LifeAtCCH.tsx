@@ -20,11 +20,11 @@ const LifeAtCCH = () => {
         <div className="flex items-start gap-8 mb-10">
           <img src="/images/our-mission.png" alt="" className="w-16 h-16 hidden md:block" />
           <div>
-            <h2 className="cch-section-title mb-4">Life at Cadet College Hasanabdal</h2>
+            <h2 className="cch-section-title mb-4">Life at BCS Cadet School</h2>
             <p className="text-cch-body-text text-sm leading-relaxed max-w-3xl">
-              The College is spread over an area of 86 acres. This includes a huge Academic Block that stands at a higher
-              level, overlooking the six wings or hostels that are lying behind it, on a slanting slope, namely, Jinnah,
-              Haider, Iqbal, Omar, Liaqat and Aurangzeb.
+              Life at BCS combines academic focus, physical training, and character building in a disciplined environment.
+              Students are guided to grow with confidence, patriotism, teamwork, and leadership so they are ready for
+              the challenges of military college entrance and future service.
             </p>
           </div>
         </div>

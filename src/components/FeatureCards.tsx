@@ -1,28 +1,28 @@
-import { Mountain, Users, FileText } from "lucide-react";
+import { GraduationCap, UserCheck, Book } from "lucide-react";
 
 const features = [
   {
-    icon: Mountain,
-    title: "Activities",
-    description: "See Activities at CCH",
+    icon: GraduationCap,
+    title: "Unbeatable Results",
+    description: "Success rate exceeds 90% in competitive prep.",
   },
   {
-    icon: Users,
-    title: "Our Skilled Instructors",
-    description: "See Faculty Profiles at CCH",
+    icon: UserCheck,
+    title: "Professional Team",
+    description: "Dedicated experts providing personalized guidance.",
   },
   {
-    icon: FileText,
-    title: "Digital Abdalian",
-    description: "Digital Editions 1961-2024",
+    icon: Book,
+    title: "ISO 9001 Certified",
+    description: "High-quality standards with international education focus.",
   },
 ];
 
 const FeatureCards = () => {
   return (
-    <div className="relative -mt-16 z-20">
+    <div className="absolute bottom-0 left-0 right-0 z-20">
       <div className="cch-container">
-        <div className="grid grid-cols-1 md:grid-cols-3 bg-cch-navy rounded-sm overflow-hidden shadow-xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 bg-[#174606]/85 rounded-sm overflow-hidden shadow-xl">
           {features.map((feature, index) => (
             <div
               key={index}
@@ -31,10 +31,10 @@ const FeatureCards = () => {
               }`}
             >
               <div>
-                <h3 className="text-lg font-bold font-roboto mb-1">{feature.title}</h3>
+                <h3 className="text-lg font-bold font-lufga mb-1 text-cch-gold">{feature.title}</h3>
                 <p className="text-sm text-primary-foreground/70">{feature.description}</p>
               </div>
-              <feature.icon className="w-10 h-10 text-cch-green group-hover:text-primary-foreground transition-colors" />
+              <feature.icon className="w-10 h-10 text-cch-gold group-hover:text-primary-foreground transition-colors" />
             </div>
           ))}
         </div>

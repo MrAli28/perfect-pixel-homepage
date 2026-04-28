@@ -1,8 +1,7 @@
-import TopBar from "@/components/TopBar";
-import Navbar from "@/components/Navbar";
 import HeroSlider from "@/components/HeroSlider";
 import FeatureCards from "@/components/FeatureCards";
 import WelcomeSection from "@/components/WelcomeSection";
+import MissionMotto from "@/components/MissionMotto";
 import StatsSection from "@/components/StatsSection";
 import VirtualTour from "@/components/VirtualTour";
 import LatestPosts from "@/components/LatestPosts";
@@ -12,26 +11,25 @@ import InstructorsSection from "@/components/InstructorsSection";
 import AlumniSection from "@/components/AlumniSection";
 import BottomStats from "@/components/BottomStats";
 import PartnersBar from "@/components/PartnersBar";
-import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
-      <TopBar />
-      <Navbar />
-      <HeroSlider />
-      <FeatureCards />
+    <div>
+      <div className="relative">
+        <HeroSlider />
+        <FeatureCards />
+      </div>
       <WelcomeSection />
       <StatsSection />
       <VirtualTour />
       <LatestPosts />
+      <MissionMotto />
       <LifeAtCCH />
       <JoinCTA />
       <InstructorsSection />
       <AlumniSection />
       <BottomStats />
       <PartnersBar />
-      <Footer />
     </div>
   );
 };

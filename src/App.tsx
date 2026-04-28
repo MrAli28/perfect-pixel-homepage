@@ -3,7 +3,20 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
 import Index from "./pages/Index";
+import About from "./pages/About";
+import Admissions from "./pages/Admissions";
+import Academics from "./pages/Academics";
+import Faculty from "./pages/Faculty";
+import CampusLife from "./pages/CampusLife";
+import News from "./pages/News";
+import Contact from "./pages/Contact";
+import Explore from "./pages/Explore";
+import WiderCurriculum from "./pages/WiderCurriculum";
+import Alumni from "./pages/Alumni";
+import EndowmentFund from "./pages/EndowmentFund";
+import Career from "./pages/Career";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -15,7 +28,21 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index />} />
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<Index />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/admissions" element={<Admissions />} />
+            <Route path="/academics" element={<Academics />} />
+            <Route path="/wider-curriculum" element={<WiderCurriculum />} />
+            <Route path="/alumni" element={<Alumni />} />
+            <Route path="/endowment-fund" element={<EndowmentFund />} />
+            <Route path="/faculty" element={<Faculty />} />
+            <Route path="/campus-life" element={<CampusLife />} />
+            <Route path="/career" element={<Career />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/contact" element={<Contact />} />
+          </Route>
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
