@@ -85,7 +85,7 @@ const faqs = [
 const Admissions = () => {
   return (
     <div className="page-block">
-      <PageBanner title="Admissions" subtitle="Admission pathway, requirements, and process details." />
+      <PageBanner title="Online Admissions" subtitle="Apply online, review eligibility, and follow the admission process in one place." />
       <section className="py-14 bg-background">
         <div className="cch-container space-y-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -100,7 +100,7 @@ const Admissions = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="page-surface p-6 md:p-8">
-              <h2 className="text-2xl font-bold text-cch-dark-text mb-4">Eligibility Tracks</h2>
+              <h2 className="text-2xl font-bold text-cch-dark-text mb-4">Online Admission Tracks</h2>
               <div className="space-y-3">
                 {eligibilityTracks.map((track) => (
                   <div key={track.level} className="bg-cch-light-gray border rounded-sm p-4">
@@ -113,7 +113,7 @@ const Admissions = () => {
             </div>
 
             <div className="page-surface p-6 md:p-8">
-              <h3 className="text-xl font-bold text-cch-dark-text mb-3">Required Documents</h3>
+              <h3 className="text-xl font-bold text-cch-dark-text mb-3">Documents for Online Submission</h3>
               <ul className="space-y-2 text-cch-body-text text-sm md:text-base list-disc list-inside">
                 {documents.map((doc) => (
                   <li key={doc}>{doc}</li>
@@ -123,7 +123,7 @@ const Admissions = () => {
           </div>
 
           <div className="page-surface p-6 md:p-8">
-            <h3 className="text-xl font-bold text-cch-dark-text mb-4">Admission Timeline</h3>
+            <h3 className="text-xl font-bold text-cch-dark-text mb-4">Online Admission Timeline</h3>
             <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
               {processTimeline.map((item) => (
                 <article key={item.stage} className="bg-cch-light-gray border rounded-sm p-4">
@@ -135,7 +135,7 @@ const Admissions = () => {
           </div>
 
           <div className="page-surface p-6 md:p-8">
-            <h3 className="text-xl font-bold text-cch-dark-text mb-4">Frequently Asked Questions</h3>
+            <h3 className="text-xl font-bold text-cch-dark-text mb-4">Online Admission FAQs</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {faqs.map((faq) => (
                 <article key={faq.q} className="bg-cch-light-gray rounded-sm border p-4">
@@ -148,12 +148,12 @@ const Admissions = () => {
 
           <div className="page-surface p-6 md:p-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
-              <p className="text-cch-body-text font-semibold">Need help with admission eligibility or form guidance?</p>
-              <p className="text-cch-body-text text-sm">Our admissions office can guide you on track selection and timeline planning.</p>
+              <p className="text-cch-body-text font-semibold">Need help with online admission eligibility or form guidance?</p>
+              <p className="text-cch-body-text text-sm">Our admissions office can guide you on track selection, document review, and timeline planning.</p>
             </div>
             <div className="flex flex-wrap gap-3">
               <a href="/contact" className="cch-btn-primary whitespace-nowrap">
-                Get Admission Help
+                Get Online Admission Help
               </a>
               <a href="/academics" className="cch-btn-primary whitespace-nowrap bg-cch-gold text-cch-dark-text hover:brightness-95">
                 View Academics

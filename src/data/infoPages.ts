@@ -1,0 +1,825 @@
+export type InfoPageContent = {
+  title: string;
+  subtitle: string;
+  overview: string;
+  sectionIntro?: string;
+  highlights: string[];
+  points: string[];
+  adminNote?: string;
+  ctaLabel: string;
+  ctaHref: string;
+};
+
+export const infoPages: Record<string, InfoPageContent> = {
+  "foreword-by-principal": {
+    title: "Foreword by the Principal",
+    subtitle: "Brig Nasir Saeed Khattak (Retd), SI(M) – Principal",
+    overview:
+      "Established in 1954 as the first institution of its kind in Pakistan, Cadet College Hasanabdal has set the bar for high-quality boarding schools for boys.",
+    sectionIntro:
+      "Based on the British Public School pattern with a highly regimented and demanding atmosphere, CCH aims at training young men to join the armed forces of Pakistan as well as other disciplines. We focus on year-round, holistic, and balanced curricular and wider curriculum activities with emphasis on leadership training spanning the spectrum. The objectives of academic excellence, character development, personality shaping, inculcating universal values, and citizenship are kept foremost as core principles in shaping our students.\n\nThe outcome of this environment during these impactful years has brought our students to consistently rise to the top and exhibit excellence as second nature. It is for this reason that CCH claims to be \"shaping excellence\" as its creed.\n\nOver the past seven decades, our alumni have not only made impactful contributions to the national mainstream but have also crossed international boundaries and are now playing significant roles at the global level. Keeping pace with modern imperatives, CCH is well on its way to establishing itself as a globally-competitive international school.\n\nOur aim is to shape our cohorts towards becoming global leaders in their chosen fields of influence. Understanding the complexity of the global village, we encourage our students to venture beyond national boundaries and partake in the cosmopolitan, interconnected world. It is with much humility and pride that we claim the sobriquet of \"Second to None\".",
+    highlights: ["Holistic Development", "Leadership Training", "Global Outlook"],
+    points: [
+      "Rigorous academics combined with structured character building and discipline.",
+      "Continuous mentoring and wider-curriculum activities build confidence, integrity, and service-oriented citizenship.",
+      "Preparation for leadership roles in both military and civilian life with an international outlook.",
+    ],
+    ctaLabel: "Aim & Objective",
+    ctaHref: "/info/aim-objective",
+  },
+  "aim-objective": {
+    title: "Aim & Objective",
+    subtitle: "Institutional aims and core objectives.",
+    overview:
+      "To cultivate intellectually robust, morally upright, and physically fit individuals who embody excellence in academics, character, discipline, and leadership. Cadet College Hasanabdal aspires to shape its students into 21st century global leaders — university-ready, life-ready, and committed to serving Pakistan and humanity with integrity, courage and purpose.",
+    sectionIntro:
+      "The college pursues a values-driven education that balances academic rigour with character development, leadership training, physical fitness, and technological readiness. The following objectives guide our institutional programmes and student experiences.",
+    highlights: ["Academic Excellence", "Leadership Development", "Character Building"],
+    points: [
+      "Academic Excellence: Provide high-quality, globally-benchmarked education that fosters critical thinking, creativity, and problem-solving in line with national and international standards.",
+      "Leadership Development: Instill leadership qualities and a strong sense of responsibility through structured training, student governance, and co-curricular engagement.",
+      "Character Building: Promote integrity, resilience, humility, and respect for diversity through a values-driven environment grounded in universal principles.",
+      "Physical and Mental Wellbeing: Ensure physical fitness and mental resilience through sports, military drills, outdoor training, and wellness programmes.",
+      "Discipline and Self-Management: Inculcate habits of discipline, time management, self-reliance and personal accountability essential for success.",
+      "Technology and Innovation: Integrate modern tools, digital literacy, and innovation into teaching and learning to prepare cadets for a rapidly evolving world.",
+      "Service to Nation: Inspire cadets to serve Pakistan and humanity through their chosen fields of influence, with unwavering loyalty and commitment.",
+    ],
+    ctaLabel: "History",
+    ctaHref: "/info/history",
+  },
+  history: {
+    title: "History",
+    subtitle: "A legacy institution shaping generations of cadets.",
+    overview:
+      "As one of the earliest premier residential institutions of its kind in Pakistan, CCH has maintained a long-standing tradition of excellence and service.",
+    highlights: ["Historic institution", "Enduring legacy", "National contribution"],
+    points: [
+      "The college established standards that inspired many later institutions.",
+      "Its alumni continue to serve across civil, military, and global sectors.",
+      "Institutional values remain consistent across decades of development.",
+    ],
+    ctaLabel: "View Campus Life",
+    ctaHref: "/campus-life",
+  },
+  
+  "founder-principal": {
+    title: "Founder Principal",
+    subtitle: "Commemorating the educational vision that shaped CCH.",
+    overview:
+      "The founding leadership established a framework centered on merit, discipline, and service that still defines the institutional ethos today.",
+    highlights: ["Foundational vision", "Merit-based standards", "Institutional ethos"],
+    points: [
+      "Core systems were built on high expectations and structured mentorship.",
+      "The foundational framework emphasized humility and excellence in equal measure.",
+      "Many present practices continue to reflect the original educational philosophy.",
+    ],
+    ctaLabel: "Read About College History",
+    ctaHref: "/info/history",
+  },
+  "principals-of-cch": {
+    title: "Principals of CCH",
+    subtitle: "Leadership continuity across the institution's journey.",
+    overview:
+      "Successive principals contributed to curriculum modernization, culture-building, and strategic progress while preserving the college's identity.",
+    highlights: ["Leadership continuity", "Strategic progress", "Tradition with growth"],
+    points: [
+      "Each tenure contributed to academic and administrative advancement.",
+      "Leadership transitions maintained consistency in discipline and standards.",
+      "Institutional reforms were introduced while preserving core values.",
+    ],
+    ctaLabel: "See Current Administration",
+    ctaHref: "/info/current-administration",
+  },
+  "board-of-governors": {
+    title: "Board of Governors",
+    subtitle: "Governance framework supporting institutional excellence.",
+    overview:
+      "The board provides strategic oversight and long-term direction to ensure quality, accountability, and responsible expansion.",
+    highlights: ["Strategic oversight", "Policy support", "Quality governance"],
+    points: [
+      "Board supervision strengthens planning and policy implementation.",
+      "Regular governance reviews support transparent decision-making.",
+      "Institutional priorities align with educational excellence and continuity.",
+    ],
+    ctaLabel: "Official Members",
+    ctaHref: "/info/official-members",
+  },
+  "official-members": {
+    title: "Official Members",
+    subtitle: "Institutional officeholders serving on governance boards.",
+    overview:
+      "Official members represent key administrative and policy roles that contribute to governance, compliance, and institutional planning.",
+    highlights: ["Policy representation", "Administrative leadership", "Governance support"],
+    points: [
+      "Official representation ensures stronger operational coordination.",
+      "Members guide strategic and regulatory alignment.",
+      "Collaborative reviews support timely policy execution.",
+    ],
+    ctaLabel: "Non-Official Members",
+    ctaHref: "/info/non-official-members",
+  },
+  "non-official-members": {
+    title: "Non-Official Members",
+    subtitle: "External and independent contributors to board deliberation.",
+    overview:
+      "Non-official members provide diverse insights and objective perspectives that strengthen strategic dialogue and long-term planning.",
+    highlights: ["External perspective", "Independent guidance", "Balanced strategy"],
+    points: [
+      "Independent voices support broader institutional reflection.",
+      "Collaborative governance ensures well-rounded decision frameworks.",
+      "Stakeholder perspectives enrich future-focused planning.",
+    ],
+    ctaLabel: "Back to Board",
+    ctaHref: "/info/board-of-governors",
+  },
+  "campus-at-a-glance": {
+    title: "Campus at a Glance",
+    subtitle: "A quick view of facilities, hostels, and learning spaces.",
+    overview:
+      "CCH is designed as a complete residential learning ecosystem with academic blocks, boarding wings, sports grounds, and activity zones.",
+    highlights: ["86-acre spread", "Residential wings", "Academic and sports blocks"],
+    points: [
+      "Academic, residential, and sports infrastructure is integrated for balanced growth.",
+      "Boarding facilities support routine, discipline, and peer learning.",
+      "The campus design promotes safety, structure, and active cadet life.",
+    ],
+    ctaLabel: "Virtual Campus Experience",
+    ctaHref: "/campus-life",
+  },
+  facilities: {
+    title: "Facilities",
+    subtitle: "Academic, residential, and co-curricular infrastructure.",
+    overview:
+      "The college provides modern classrooms, labs, library resources, sports infrastructure, and well-managed boarding facilities.",
+    highlights: ["Labs and library", "Sports grounds", "Boarding and mess systems"],
+    points: [
+      "Dedicated facilities support both classroom learning and skill development.",
+      "Sports and activity spaces promote physical wellness and teamwork.",
+      "Residential services are structured for comfort, discipline, and care.",
+    ],
+    ctaLabel: "Explore Wider Curriculum",
+    ctaHref: "/wider-curriculum",
+  },
+  "current-administration": {
+    title: "Current Administration",
+    subtitle: "Leadership team managing academic and campus operations.",
+    overview:
+      "The administration ensures policy execution, student welfare, and operational efficiency to sustain a high-performance learning environment.",
+    highlights: ["Operational leadership", "Student welfare", "Academic oversight"],
+    points: [
+      "Administrative offices coordinate academics, cadet life, and support services.",
+      "Routine quality checks maintain educational and residential standards.",
+      "Leadership engagement strengthens communication across stakeholders.",
+    ],
+    ctaLabel: "Contact Office",
+    ctaHref: "/contact",
+  },
+  "courses-offered": {
+    title: "Courses Offered",
+    subtitle: "Academic streams and subject combinations offered at CCH.",
+    overview:
+      "The college offers a focused mix of O-Level and A-Level pathways so cadets can align subject selection with future university and career goals.",
+    highlights: ["Science and humanities", "Board-aligned subjects", "Stream guidance"],
+    points: [
+      "Science options include combinations for medical, engineering, and computer science pathways.",
+      "Humanities and social science choices support broader university and professional routes.",
+      "Faculty guidance helps cadets select subjects that match aptitude and long-term plans.",
+    ],
+    ctaLabel: "Admission Help",
+    ctaHref: "/contact",
+  },
+  "admission-intake": {
+    title: "Admission Intake",
+    subtitle: "Entry classes, intake cycles, and seat planning overview.",
+    overview:
+      "Admission intakes are managed through transparent timelines and merit-based processes for each eligible class and program stream.",
+    highlights: ["Structured cycles", "Merit process", "Class-wise entries"],
+    points: [
+      "Entry windows are announced in alignment with annual academic planning.",
+      "Candidates are shortlisted based on exam and assessment criteria.",
+      "Final selections follow documented merit and interview outcomes.",
+    ],
+    ctaLabel: "Online Admissions",
+    ctaHref: "/admissions",
+  },
+  "admission-to-class-a-level": {
+    title: "Admission to Class A-Level",
+    subtitle: "Entry process and requirements for A-Level intake.",
+    overview:
+      "A-Level admissions focus on academic readiness, subject compatibility, and aptitude to ensure successful progression in advanced studies.",
+    highlights: ["Advanced entry", "Eligibility screening", "Merit shortlist"],
+    points: [
+      "Applicants are assessed for prior performance and learning readiness.",
+      "Selection includes test and interview stages where applicable.",
+      "Merit outcomes are shared with joining and orientation guidance.",
+    ],
+    ctaLabel: "See Exam Preparation",
+    ctaHref: "/info/exam-preparation",
+  },
+  "admission-to-class-o-level": {
+    title: "Admission to Class O-Level",
+    subtitle: "Entry route for foundational O-Level academic track.",
+    overview:
+      "The O-Level entry stream prepares students through a strong conceptual base, structured routine, and continuous mentoring support.",
+    highlights: ["Foundational track", "Structured onboarding", "Mentored learning"],
+    points: [
+      "Admissions prioritize aptitude and readiness for residential learning.",
+      "Onboarding includes academic and discipline orientation.",
+      "Cadets receive regular progress support from faculty and house staff.",
+    ],
+    ctaLabel: "Admission Timeline",
+    ctaHref: "/admissions",
+  },
+  "exam-preparation": {
+    title: "Exam Preparation",
+    subtitle: "Structured preparation support for entrance testing.",
+    overview:
+      "The preparation pathway includes subject guidance, model assessments, and strategy sessions designed for confident performance.",
+    highlights: ["Syllabus alignment", "Practice modules", "Assessment strategy"],
+    points: [
+      "Preparation plans cover core areas tested in entry assessments.",
+      "Mock testing supports time management and confidence building.",
+      "Mentoring sessions address exam patterns and common challenges.",
+    ],
+    ctaLabel: "View Syllabus",
+    ctaHref: "/info/syllabus-for-entry-exam",
+  },
+  "syllabus-for-entry-exam": {
+    title: "Syllabus for Entry Exam",
+    subtitle: "Subject areas and preparation scope for applicants.",
+    overview:
+      "The exam syllabus outlines key competencies expected from candidates across core subjects and reasoning modules.",
+    highlights: ["Core subjects", "Reasoning focus", "Class-specific scope"],
+    points: [
+      "Applicants should review topic coverage by class entry category.",
+      "Practice exercises help improve speed and conceptual accuracy.",
+      "Parents can support planning using weekly preparation schedules.",
+    ],
+    ctaLabel: "Admissions Support",
+    ctaHref: "/contact",
+  },
+  "fee-structure": {
+    title: "Fee Structure",
+    subtitle: "Monthly fee, extra expenses, and payment guidance.",
+    overview:
+      "The fee schedule is issued with yearly planning in mind and is normally charged quarterly in advance, with clear notes on additional expenses and payment deadlines.",
+    highlights: ["Quarterly billing", "Annual revisions", "Late payment policy"],
+    points: [
+      "The monthly fee is announced as a tentative structure for the relevant academic year.",
+      "Extra charges may apply for clothing, books, stationery, travel, postage, photographs, and similar personal expenses.",
+      "Late payments can attract daily fines and, if overdue amounts remain unresolved, further administrative penalties.",
+    ],
+    ctaLabel: "General Instructions",
+    ctaHref: "/info/general-instructions",
+  },
+  "academic-excellence": {
+    title: "Academic Excellence",
+    subtitle: "Performance culture driven by quality teaching and mentoring.",
+    overview:
+      "The college maintains strong outcomes through rigorous instruction, continuous evaluation, and targeted support for individual learners.",
+    highlights: ["Result consistency", "Instruction quality", "Targeted support"],
+    points: [
+      "Department plans are aligned with measurable learning outcomes.",
+      "Faculty review performance trends and strengthen support mechanisms.",
+      "High standards are reinforced through mentoring and accountability.",
+    ],
+    ctaLabel: "View Position Holders",
+    ctaHref: "/info/position-holders",
+  },
+  "position-holders": {
+    title: "Position Holders",
+    subtitle: "Celebrating top-performing cadets and academic achievers.",
+    overview:
+      "This section recognizes merit through annual and term-based distinctions that reflect discipline, consistency, and hard work.",
+    highlights: ["Merit recognition", "Annual distinctions", "Achievement culture"],
+    points: [
+      "Cadets are acknowledged for outstanding board and internal results.",
+      "Recognition motivates healthy competition and goal-oriented effort.",
+      "Academic honors reflect both performance and personal discipline.",
+    ],
+    ctaLabel: "Academics Overview",
+    ctaHref: "/academics",
+  },
+  "learning-resources": {
+    title: "Learning Resources",
+    subtitle: "Classroom support systems and academic tools.",
+    overview:
+      "CCH provides curated learning resources, guided material support, and subject reinforcement modules to improve student outcomes.",
+    highlights: ["Resource support", "Guided learning", "Subject reinforcement"],
+    points: [
+      "Students access structured notes and reference material by department.",
+      "Resource planning supports regular revision and conceptual retention.",
+      "Faculty-assisted sessions help close individual learning gaps.",
+    ],
+    ctaLabel: "Digital Library",
+    ctaHref: "/info/digital-library",
+  },
+  "digital-library": {
+    title: "Digital Library",
+    subtitle: "Access to e-resources, archives, and research tools.",
+    overview:
+      "The digital library supports independent learning with curated references, archives, and digital access resources for cadets and faculty.",
+    highlights: ["E-learning access", "Curated references", "Academic archives"],
+    points: [
+      "Students use digital references to complement classroom instruction.",
+      "The archive preserves institutional material for guided study.",
+      "Library workflows promote information literacy and research habits.",
+    ],
+    ctaLabel: "Meet Faculty Team",
+    ctaHref: "/faculty",
+  },
+  "community-service": {
+    title: "Community Service",
+    subtitle: "Service initiatives that build empathy and responsibility.",
+    overview:
+      "Cadets participate in outreach and social welfare activities that strengthen civic values and practical leadership.",
+    highlights: ["Civic engagement", "Volunteer culture", "Social contribution"],
+    points: [
+      "Programs connect cadets with meaningful local service opportunities.",
+      "Activities promote empathy, responsibility, and public-minded thinking.",
+      "Service records support personal growth and leadership portfolios.",
+    ],
+    ctaLabel: "Wider Curriculum",
+    ctaHref: "/wider-curriculum",
+  },
+  "clubs-societies": {
+    title: "Clubs & Societies",
+    subtitle: "Interest-based platforms for creativity and collaboration.",
+    overview:
+      "Student clubs offer cadets opportunities to develop communication, innovation, and teamwork beyond classroom settings.",
+    highlights: ["Student initiatives", "Skill enrichment", "Peer collaboration"],
+    points: [
+      "Clubs support debate, science, literature, arts, and technology engagement.",
+      "Cadets learn event planning, coordination, and responsible participation.",
+      "Activities reinforce confidence and healthy competition.",
+    ],
+    ctaLabel: "Campus Activities",
+    ctaHref: "/campus-life",
+  },
+  "duke-of-edinburgh-award": {
+    title: "Duke of Edinburgh's Award",
+    subtitle: "Globally recognized youth development framework.",
+    overview:
+      "The DOE pathway encourages cadets to grow through service, skill-building, physical challenges, and expedition learning.",
+    highlights: ["Global framework", "Expedition learning", "Personal growth"],
+    points: [
+      "Cadets complete progressive milestones across skill and service domains.",
+      "Program outcomes reflect resilience, planning, and perseverance.",
+      "Award participation complements formal academic development.",
+    ],
+    ctaLabel: "Guidance Support",
+    ctaHref: "/info/guidance-placement-cell",
+  },
+  "guidance-placement-cell": {
+    title: "Guidance & Placement Cell",
+    subtitle: "Academic and career guidance for informed choices.",
+    overview:
+      "The cell supports cadets with pathway counseling, university planning, and future-focused mentoring.",
+    highlights: ["Career counseling", "University planning", "Mentored choices"],
+    points: [
+      "Counseling sessions support subject and career decision-making.",
+      "Cadets receive guidance for applications, interviews, and readiness.",
+      "Placement advising aligns student strengths with long-term goals.",
+    ],
+    ctaLabel: "SAT Support",
+    ctaHref: "/info/sat",
+  },
+  mentorship: {
+    title: "Mentorship",
+    subtitle: "Structured guidance for academic and personal growth.",
+    overview:
+      "The mentorship framework pairs cadets with faculty guidance to support discipline, confidence, and performance continuity.",
+    highlights: ["One-to-one guidance", "Progress monitoring", "Confidence building"],
+    points: [
+      "Mentors track cadet progress and provide timely interventions.",
+      "Cadets receive support on routine, goals, and study habits.",
+      "The system strengthens trust and positive student outcomes.",
+    ],
+    ctaLabel: "Social Emotional Learning",
+    ctaHref: "/info/social-emotional-learning",
+  },
+  "round-square": {
+    title: "Round Square",
+    subtitle: "International outlook through experiential education values.",
+    overview:
+      "Round Square activities expose cadets to global perspectives through service, adventure, and intercultural collaboration.",
+    highlights: ["Global exposure", "Character education", "Collaborative learning"],
+    points: [
+      "Cadets engage in value-based projects and leadership opportunities.",
+      "Programs build global awareness and practical communication skills.",
+      "Participation enriches wider curriculum outcomes.",
+    ],
+    ctaLabel: "Other Activities",
+    ctaHref: "/info/other-activities",
+  },
+  sat: {
+    title: "SAT",
+    subtitle: "Preparation support for standardized college readiness tests.",
+    overview:
+      "SAT preparation includes guided instruction, practice assessments, and strategic feedback to improve applicant readiness.",
+    highlights: ["Test readiness", "Score improvement", "University pathway"],
+    points: [
+      "Cadets receive concept-focused preparation in key SAT domains.",
+      "Practice sessions improve timing, strategy, and confidence.",
+      "Guidance aligns SAT performance with university application planning.",
+    ],
+    ctaLabel: "Placement Guidance",
+    ctaHref: "/info/guidance-placement-cell",
+  },
+  "well-being": {
+    title: "Well Being",
+    subtitle: "Balanced support for emotional, social, and physical wellness.",
+    overview:
+      "Well-being initiatives ensure cadets remain supported through preventive, educational, and mentoring interventions.",
+    highlights: ["Student wellness", "Preventive support", "Healthy routines"],
+    points: [
+      "Programs focus on resilience, emotional regulation, and healthy behavior.",
+      "Cadets receive age-appropriate awareness and support interventions.",
+      "Staff collaboration helps maintain a safe and supportive environment.",
+    ],
+    ctaLabel: "View Policy Documents",
+    ctaHref: "/info/policy-documents",
+  },
+  "policy-documents": {
+    title: "Policy Documents",
+    subtitle: "Institutional policies for student safety and conduct.",
+    overview:
+      "Policy documents define standards related to behavior, welfare, safeguarding, and institutional procedures.",
+    highlights: ["Safeguarding policies", "Conduct framework", "Transparent procedures"],
+    points: [
+      "Policies support consistency in student welfare and campus discipline.",
+      "Stakeholders can review procedures for clarity and compliance.",
+      "Periodic updates ensure relevance to current educational needs.",
+    ],
+    ctaLabel: "Well Being",
+    ctaHref: "/info/well-being",
+  },
+  "social-emotional-learning": {
+    title: "Social and Emotional Learning",
+    subtitle: "Developing emotional intelligence and interpersonal skills.",
+    overview:
+      "SEL modules help cadets strengthen self-awareness, empathy, communication, and decision-making in daily life.",
+    highlights: ["Emotional intelligence", "Self-management", "Healthy relationships"],
+    points: [
+      "Cadets practice reflection and goal-setting through guided activities.",
+      "Programs improve peer collaboration and conflict resolution skills.",
+      "SEL supports stronger classroom engagement and personal resilience.",
+    ],
+    ctaLabel: "Mentorship Program",
+    ctaHref: "/info/mentorship",
+  },
+  "other-activities": {
+    title: "Other Activities",
+    subtitle: "Extended opportunities beyond core curriculum pathways.",
+    overview:
+      "Additional co-curricular activities provide cadets with practical experiences in arts, sports, and leadership engagement.",
+    highlights: ["Co-curricular depth", "Leadership practice", "Talent exploration"],
+    points: [
+      "Cadets participate in events that complement formal academics.",
+      "Activity diversity supports balanced and confident personalities.",
+      "Regular engagement improves discipline and collaborative spirit.",
+    ],
+    ctaLabel: "Campus Life",
+    ctaHref: "/campus-life",
+  },
+  "homecomings-golden-jubilee": {
+    title: "Homecomings & Golden Jubilee",
+    subtitle: "Celebrating alumni connections and institutional milestones.",
+    overview:
+      "Homecoming and jubilee events strengthen alumni engagement while honoring tradition and collective achievement.",
+    highlights: ["Alumni network", "Milestone celebrations", "Community continuity"],
+    points: [
+      "Events bring together alumni, faculty, and cadets across generations.",
+      "Celebrations preserve college heritage and institutional memory.",
+      "Engagement initiatives foster mentorship and support networks.",
+    ],
+    ctaLabel: "Alumni Registration",
+    ctaHref: "/alumni",
+  },
+  "prominent-abdalian": {
+    title: "Prominent Abdalian",
+    subtitle: "Recognizing distinguished alumni and their contributions.",
+    overview:
+      "This section highlights alumni serving with distinction in national and international spheres.",
+    highlights: ["Notable alumni", "National service", "Global impact"],
+    points: [
+      "Profiles showcase excellence across diverse professional domains.",
+      "Achievements inspire current cadets and reinforce institutional pride.",
+      "Success stories demonstrate the long-term value of CCH training.",
+    ],
+    ctaLabel: "Read Alumni Stories",
+    ctaHref: "/alumni",
+  },
+  "abdalian-keepsake": {
+    title: "ABDALIAN-Keepsake",
+    subtitle: "Archival and commemorative records of alumni heritage.",
+    overview:
+      "Keepsake content preserves key memories, stories, and milestones from the Abdalian community.",
+    highlights: ["Heritage archive", "Community memory", "Institutional record"],
+    points: [
+      "Collections document alumni journeys and historical moments.",
+      "Curated records strengthen intergenerational identity.",
+      "The archive supports heritage preservation and storytelling.",
+    ],
+    ctaLabel: "Digital Abdalian",
+    ctaHref: "/info/digital-abdalian",
+  },
+  "appeal-by-principal": {
+    title: "Appeal by the Principal",
+    subtitle: "Support message for institutional development initiatives.",
+    overview:
+      "The principal's appeal outlines long-term priorities and invites stakeholders to contribute toward sustainable growth.",
+    highlights: ["Development roadmap", "Stakeholder support", "Institutional sustainability"],
+    points: [
+      "The appeal focuses on future-ready academic and campus enhancements.",
+      "Donor participation helps expand student opportunity and infrastructure.",
+      "Support initiatives are aligned with transparent governance practices.",
+    ],
+    ctaLabel: "Endowment Fund",
+    ctaHref: "/endowment-fund",
+  },
+  "board-of-trustees": {
+    title: "Board of Trustees",
+    subtitle: "Trustees overseeing fund stewardship and strategic impact.",
+    overview:
+      "The trustee board ensures donor contributions are managed responsibly and directed toward approved institutional priorities.",
+    highlights: ["Fund governance", "Strategic oversight", "Accountable stewardship"],
+    points: [
+      "Trustees guide policy for fund utilization and program priorities.",
+      "Oversight mechanisms maintain confidence and transparency.",
+      "Governance structures support long-term educational benefit.",
+    ],
+    ctaLabel: "Audit Reports",
+    ctaHref: "/info/audit-reports",
+  },
+  "trust-deed-certifications": {
+    title: "Trust Deed & Certifications",
+    subtitle: "Legal and compliance framework for endowment operations.",
+    overview:
+      "This section references legal documents and certifications supporting the endowment fund's compliant operation.",
+    highlights: ["Legal framework", "Compliance documents", "Institutional credibility"],
+    points: [
+      "Trust documentation defines fund governance and operational boundaries.",
+      "Certifications strengthen transparency and public confidence.",
+      "Compliance updates are maintained according to applicable standards.",
+    ],
+    ctaLabel: "Board of Trustees",
+    ctaHref: "/info/board-of-trustees",
+  },
+  "account-details": {
+    title: "Account Details",
+    subtitle: "Designated channels for fund contributions and support.",
+    overview:
+      "Official account channels are provided for secure contributions to the endowment and approved institutional initiatives.",
+    highlights: ["Secure channels", "Contribution clarity", "Official processes"],
+    points: [
+      "Contributions should be made through verified institutional details.",
+      "Donors can coordinate with the office for acknowledgment and records.",
+      "Financial controls ensure accountable receipt and utilization.",
+    ],
+    ctaLabel: "Contact Endowment Office",
+    ctaHref: "/contact",
+  },
+  "audit-reports": {
+    title: "Audit Reports",
+    subtitle: "Financial review summaries and accountability records.",
+    overview:
+      "Audit reporting reinforces transparent stewardship by documenting compliance and utilization trends for endowment resources.",
+    highlights: ["Financial transparency", "Compliance review", "Stakeholder confidence"],
+    points: [
+      "Reports provide visibility into controls and governance practices.",
+      "Regular audits support trust and policy adherence.",
+      "Findings help improve long-term financial management.",
+    ],
+    ctaLabel: "Trust Documents",
+    ctaHref: "/info/trust-deed-certifications",
+  },
+  "rules-regulations": {
+    title: "Rules & Regulations",
+    subtitle: "Cadet conduct and campus discipline framework.",
+    overview:
+      "Rules and regulations define behavioral standards and responsibilities that ensure a safe, orderly, and productive environment.",
+    highlights: ["Code of conduct", "Discipline standards", "Campus order"],
+    points: [
+      "Guidelines support respect, responsibility, and institutional values.",
+      "Cadets are briefed on rules during orientation and routine sessions.",
+      "Policy consistency ensures fairness and accountability.",
+    ],
+    ctaLabel: "Cadet Activities",
+    ctaHref: "/campus-life",
+  },
+  "cch-newsletters": {
+    title: "CCH Newsletters",
+    subtitle: "Periodic highlights from academic and cadet life.",
+    overview:
+      "Newsletters capture key updates, achievements, and events from across departments and cadet activities.",
+    highlights: ["Periodic updates", "Event highlights", "Achievement coverage"],
+    points: [
+      "Newsletter editions document college milestones and success stories.",
+      "Cadets and faculty contributions strengthen institutional communication.",
+      "Archives support community engagement and historical continuity.",
+    ],
+    ctaLabel: "Latest News",
+    ctaHref: "/news",
+  },
+  "calendar-of-events": {
+    title: "Calendar of Events",
+    subtitle: "Planned schedule of academic and co-curricular activities.",
+    overview:
+      "The event calendar supports structured planning of term activities, competitions, observances, and major campus milestones.",
+    highlights: ["Term planning", "Activity schedule", "Institutional coordination"],
+    points: [
+      "Calendar planning helps cadets and families stay informed.",
+      "Departments align timelines for assessments and activities.",
+      "Published schedules improve operational readiness and participation.",
+    ],
+    ctaLabel: "Campus Notices",
+    ctaHref: "/news",
+  },
+  "mess-menu": {
+    title: "Mess Menu",
+    subtitle: "Nutrition planning and dining schedule for cadets.",
+    overview:
+      "The mess menu framework emphasizes balanced nutrition, hygiene standards, and routine meal planning for resident cadets.",
+    highlights: ["Balanced meals", "Dining routines", "Health-focused planning"],
+    points: [
+      "Menus are designed to support physical and academic performance.",
+      "Meal routines are integrated with cadet daily schedules.",
+      "Quality and hygiene standards remain core service priorities.",
+    ],
+    ctaLabel: "Student Welfare",
+    ctaHref: "/info/well-being",
+  },
+  "digital-abdalian": {
+    title: "Digital Abdalian",
+    subtitle: "Digital archive of Abdalian publications and editions.",
+    overview:
+      "The digital archive preserves newsletters and publications to maintain institutional memory and alumni connection.",
+    highlights: ["Publication archive", "Digital access", "Heritage preservation"],
+    points: [
+      "Historical editions remain accessible for students and alumni.",
+      "The archive reflects evolving institutional milestones.",
+      "Digital preservation supports continuity and research use.",
+    ],
+    ctaLabel: "ABDALIAN-Keepsake",
+    ctaHref: "/info/abdalian-keepsake",
+  },
+  "wing-mascots": {
+    title: "Wing & Mascots",
+    subtitle: "House identity, traditions, and cadet spirit.",
+    overview:
+      "Wing culture builds belonging, healthy competition, and leadership through house-based identity and activities.",
+    highlights: ["House system", "Cadet spirit", "Competitive culture"],
+    points: [
+      "Each wing contributes to discipline and peer mentorship.",
+      "Mascot and house traditions strengthen institutional pride.",
+      "Inter-wing activities build confidence and teamwork.",
+    ],
+    ctaLabel: "Campus Life",
+    ctaHref: "/campus-life",
+  },
+  "cch-scholarships": {
+    title: "CCH Scholarships",
+    subtitle: "Merit support and need-based financial assistance.",
+    overview:
+      "Scholarships at CCH recognize excellence and help deserving cadets continue their education with dignity, supported by both merit-based awards and need-based assistance.",
+    sectionIntro:
+      "This page mirrors the institutional scholarship framework used to balance merit recognition with compassionate support for cadets who need it most.",
+    highlights: ["Merit awards", "Need-based aid", "Transparent review"],
+    points: [
+      "Merit scholarships are awarded to top performers after internal and external assessments.",
+      "Need-based support is reviewed carefully through documented applications and financial screening.",
+      "Scholarship decisions are made within an accountable institutional process and are not guaranteed for every applicant.",
+    ],
+    ctaLabel: "Endowment Support",
+    ctaHref: "/endowment-fund",
+  },
+  "nust-scholarships": {
+    title: "NUST Scholarships",
+    subtitle: "Guidance for cadets aiming for university scholarship pathways.",
+    overview:
+      "NUST-focused scholarship guidance supports cadets with academic planning, entry-test preparation, and application readiness for competitive higher education opportunities.",
+    sectionIntro:
+      "The emphasis is on helping cadets understand scholarship expectations, exam strategy, and document preparation before they apply.",
+    highlights: ["University readiness", "Test preparation", "Application guidance"],
+    points: [
+      "Cadets receive counseling on eligibility, subject selection, and test timelines.",
+      "Preparation support can include practice assessments, interview readiness, and document checklists.",
+      "The guidance cell helps students connect scholarship planning with their wider academic goals.",
+    ],
+    ctaLabel: "Guidance Cell",
+    ctaHref: "/info/guidance-placement-cell",
+  },
+  "general-instructions": {
+    title: "General Instructions",
+    subtitle: "Campus discipline, student conduct, and daily life rules.",
+    overview:
+      "General instructions define the practical routines and discipline standards that guide cadet life, welfare, and orderly conduct across the campus.",
+    sectionIntro:
+      "This section summarizes the major rules that are usually shared with cadets and parents at the start of every academic cycle.",
+    highlights: ["Discipline rules", "Cadet welfare", "Campus conduct"],
+    points: [
+      "Cadets are not permitted to keep unauthorized electronic items, drugs, weapons, or other prohibited materials in the wings.",
+      "Serious offences such as cheating, misconduct, disobedience, smoking, or repeated indiscipline can lead to withdrawal or expulsion.",
+      "Pocket money, visitor access, weekend leave, telephone calls, correspondence, and journey arrangements all follow official college rules.",
+    ],
+    ctaLabel: "Rules & Regulations",
+    ctaHref: "/info/rules-regulations",
+  },
+  "group-photograph": {
+    title: "Group Photograph",
+    subtitle: "Faculty and outgoing class photographs preserved as institutional memory.",
+    overview:
+      "Group photographs record faculty teams and outgoing cadet batches, providing a visual archive of each academic year and its people.",
+    sectionIntro:
+      "The page is intended as a heritage space where the college can preserve and revisit formal class photographs and milestone moments.",
+    highlights: ["Faculty archive", "Outgoing class memories", "Heritage record"],
+    points: [
+      "Photographs capture the identity of each graduating or outgoing cohort.",
+      "The archive supports alumni memory, college storytelling, and historical continuity.",
+      "This type of record is often used for magazines, newsletters, and commemorative displays.",
+    ],
+    ctaLabel: "Digital Abdalian",
+    ctaHref: "/info/digital-abdalian",
+  },
+  "career-opportunities": {
+    title: "Career Opportunities",
+    subtitle: "Useful pathways and resources for future study and professions.",
+    overview:
+      "The career opportunities page helps cadets think beyond school by pointing them toward higher study, scholarships, and profession-related research resources.",
+    sectionIntro:
+      "The reference site presents this as a curated list of external resources, and this version keeps the same intent with a cleaner institutional presentation.",
+    highlights: ["Career planning", "Higher education", "Scholarship research"],
+    points: [
+      "Cadets can use the guidance cell to discuss subject choices and long-term plans.",
+      "Higher education preparation includes university research, scholarship awareness, and test readiness.",
+      "A useful career page should remain practical, updated, and easy to scan for students and families.",
+    ],
+    ctaLabel: "Guidance & Placement Cell",
+    ctaHref: "/info/guidance-placement-cell",
+  },
+  "details-pen-pictures": {
+    title: "Details & Pen Pictures",
+    subtitle: "Individual cadet profiles and descriptive records for review.",
+    overview:
+      "Details and pen pictures provide a structured view of cadet background, strengths, and academic profile to help with mentoring and reporting.",
+    sectionIntro:
+      "This page is best used for profile-style summaries, especially when faculty need quick reference notes about a cadet's development.",
+    highlights: ["Individual profiling", "Mentoring support", "Academic snapshot"],
+    points: [
+      "Each profile can capture academic stream, interests, discipline record, and co-curricular strengths.",
+      "Pen pictures help instructors and house staff maintain a consistent understanding of cadet progress.",
+      "The format is useful for orientation, internal reviews, and institutional records.",
+    ],
+    ctaLabel: "Academic Excellence",
+    ctaHref: "/info/academic-excellence",
+  },
+  "privacy-policy": {
+    title: "Privacy Policy",
+    subtitle: "How the college collects, uses, and protects visitor information.",
+    overview:
+      "Cadet College Hasanabdal uses its website with a commitment to transparency, responsible data handling, and appropriate protection of user information.",
+    sectionIntro:
+      "This policy page mirrors the reference site's intent: explain what data is collected, how it is used, and what protections are in place.",
+    highlights: ["Data collection", "Secure handling", "Policy updates"],
+    points: [
+      "The website may collect analytics such as IP address, browser information, visited pages, and form submissions.",
+      "Cookies and web forms are used to support communication and service improvement, while sensitive information is not stored in cookies.",
+      "Collected information is protected through access controls and secure transmission, and the policy may be updated from time to time.",
+    ],
+    ctaLabel: "Terms & Conditions",
+    ctaHref: "/info/terms-conditions",
+  },
+  "terms-conditions": {
+    title: "Terms & Conditions",
+    subtitle: "Rules for using the website and its published content.",
+    overview:
+      "The terms describe acceptable use, user responsibilities, content rights, and the legal boundaries that apply to the college website.",
+    sectionIntro:
+      "The reference site presents this as a formal legal page, so the summary here keeps the same tone while remaining readable.",
+    highlights: ["Acceptable use", "Content rights", "Legal safeguards"],
+    points: [
+      "Users agree to follow the published terms when they access or use the site.",
+      "College content, marks, and design elements remain protected intellectual property unless permission is explicitly granted.",
+      "The college reserves the right to manage, modify, suspend, or restrict site access according to its published policies.",
+    ],
+    ctaLabel: "Privacy Policy",
+    ctaHref: "/info/privacy-policy",
+  },
+  "cancelation-policy": {
+    title: "Cancelation Policy",
+    subtitle: "Official guidance for cancellation, withdrawal, and related requests.",
+    overview:
+      "The cancelation policy explains how formal withdrawal, seat cancellation, or related administrative requests are handled through official channels.",
+    sectionIntro:
+      "This page gives parents and applicants a clear place to understand when a cancellation request is accepted and how records are processed.",
+    highlights: ["Written requests", "Office review", "Record handling"],
+    points: [
+      "Cancellation or withdrawal requests should be submitted through the official admissions or administration office.",
+      "Any financial adjustment or document handling must follow the college's approved procedures.",
+      "Final decisions are made according to institutional policy and the current admission cycle status.",
+    ],
+    ctaLabel: "Contact Us",
+    ctaHref: "/contact",
+  },
+};

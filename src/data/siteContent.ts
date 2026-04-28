@@ -22,40 +22,39 @@ export const navMegaMenus: MegaMenu[] = [
     links: [
       { 
         label: "Foreword by Principal", 
-        href: "#" 
+        href: "/info/foreword-by-principal" 
       },
       { 
         label: "Aim & Objective", 
-        href: "#" 
+        href: "/info/aim-objective" 
       },
       { 
         label: "History", 
-        href: "#",
+        href: "/info/history",
         children: [
-          { label: "Overview of CCH", href: "#" },
-          { label: "Founder Principal", href: "#" },
-          { label: "Principals of CCH", href: "#" },
+          { label: "Founder Principal", href: "/info/founder-principal" },
+          { label: "Principals of CCH", href: "/info/principals-of-cch" },
         ]
       },
       { 
         label: "Board of Governors", 
-        href: "#",
+        href: "/info/board-of-governors",
         children: [
-          { label: "Official Members", href: "#" },
-          { label: "Non-Official Members", href: "#" },
+          { label: "Official Members", href: "/info/official-members" },
+          { label: "Non-Official Members", href: "/info/non-official-members" },
         ]
       },
       { 
         label: "Campus at a Glance", 
-        href: "#" 
+        href: "/info/campus-at-a-glance" 
       },
       { 
         label: "Facilities", 
-        href: "#" 
+        href: "/info/facilities" 
       },
       { 
         label: "Current Administration", 
-        href: "#" 
+        href: "/info/current-administration" 
       },
       { 
         label: "News", 
@@ -72,26 +71,38 @@ export const navMegaMenus: MegaMenu[] = [
       },
       { 
         label: "Courses Offered", 
-        href: "#" 
+        href: "/info/courses-offered" 
+      },
+      { 
+        label: "CCH Scholarships", 
+        href: "/info/cch-scholarships" 
+      },
+      { 
+        label: "NUST Scholarships", 
+        href: "/info/nust-scholarships" 
+      },
+      { 
+        label: "General Instructions", 
+        href: "/info/general-instructions" 
       },
       { 
         label: "Admission Intake", 
-        href: "#",
+        href: "/info/admission-intake",
         children: [
-          { label: "Admission to Class A-Level", href: "#" },
-          { label: "Admission to Class O-Level", href: "#" },
+          { label: "Admission to Class A-Level", href: "/info/admission-to-class-a-level" },
+          { label: "Admission to Class O-Level", href: "/info/admission-to-class-o-level" },
         ]
       },
       { 
         label: "Exam Preparation", 
-        href: "#",
+        href: "/info/exam-preparation",
         children: [
-          { label: "Syllabus for Entry Exam", href: "#" },
+          { label: "Syllabus for Entry Exam", href: "/info/syllabus-for-entry-exam" },
         ]
       },
       { 
         label: "Fee Structure", 
-        href: "#" 
+        href: "/info/fee-structure" 
       },
     ],
   },
@@ -104,19 +115,31 @@ export const navMegaMenus: MegaMenu[] = [
       },
       { 
         label: "Academic Excellence", 
-        href: "#" 
+        href: "/info/academic-excellence" 
+      },
+      { 
+        label: "Group Photograph", 
+        href: "/info/group-photograph" 
+      },
+      { 
+        label: "Career Opportunities", 
+        href: "/info/career-opportunities" 
+      },
+      { 
+        label: "Details & Pen Pictures", 
+        href: "/info/details-pen-pictures" 
       },
       { 
         label: "Position Holders", 
-        href: "#" 
+        href: "/info/position-holders" 
       },
       { 
         label: "Learning Resources", 
-        href: "#" 
+        href: "/info/learning-resources" 
       },
       { 
         label: "Digital Library", 
-        href: "#" 
+        href: "/info/digital-library" 
       },
     ],
   },
@@ -125,39 +148,39 @@ export const navMegaMenus: MegaMenu[] = [
     links: [
       { 
         label: "Community Service", 
-        href: "#" 
+        href: "/info/community-service" 
       },
       { 
         label: "Clubs & Societies", 
-        href: "#" 
+        href: "/info/clubs-societies" 
       },
       { 
         label: "Duke of Edinburgh's Award", 
-        href: "#" 
+        href: "/info/duke-of-edinburgh-award" 
       },
       { 
         label: "Guidance & Placement Cell", 
-        href: "#" 
+        href: "/info/guidance-placement-cell" 
       },
       { 
         label: "Mentorship", 
-        href: "#" 
+        href: "/info/mentorship" 
       },
       { 
         label: "Round Square", 
-        href: "#" 
+        href: "/info/round-square" 
       },
       { 
         label: "SAT", 
-        href: "#" 
+        href: "/info/sat" 
       },
       { 
         label: "Well Being", 
-        href: "#",
+        href: "/info/well-being",
         children: [
-          { label: "Policy Documents", href: "#" },
-          { label: "Social and Emotional Learning", href: "#" },
-          { label: "Other Activities", href: "#" },
+          { label: "Policy Documents", href: "/info/policy-documents" },
+          { label: "Social and Emotional Learning", href: "/info/social-emotional-learning" },
+          { label: "Other Activities", href: "/info/other-activities" },
         ]
       },
     ],
@@ -171,15 +194,15 @@ export const navMegaMenus: MegaMenu[] = [
       },
       { 
         label: "Homecomings & Golden Jubilee", 
-        href: "#" 
+        href: "/info/homecomings-golden-jubilee" 
       },
       { 
         label: "Prominent Abdalian", 
-        href: "#" 
+        href: "/info/prominent-abdalian" 
       },
       { 
         label: "ABDALIAN-Keepsake", 
-        href: "#" 
+        href: "/info/abdalian-keepsake" 
       },
     ],
   },
@@ -188,23 +211,23 @@ export const navMegaMenus: MegaMenu[] = [
     links: [
       { 
         label: "Appeal by the Principal", 
-        href: "#" 
+        href: "/info/appeal-by-principal" 
       },
       { 
         label: "Board of Trustees", 
-        href: "#" 
+        href: "/info/board-of-trustees" 
       },
       { 
         label: "Trust Deed & Certifications", 
-        href: "#" 
+        href: "/info/trust-deed-certifications" 
       },
       { 
         label: "Account Details", 
-        href: "#" 
+        href: "/info/account-details" 
       },
       { 
         label: "Audit Reports", 
-        href: "#" 
+        href: "/info/audit-reports" 
       },
     ],
   },
@@ -217,27 +240,27 @@ export const navMegaMenus: MegaMenu[] = [
       },
       { 
         label: "Rules & Regulations", 
-        href: "#" 
+        href: "/info/rules-regulations" 
       },
       { 
         label: "CCH Newsletters", 
-        href: "#" 
+        href: "/info/cch-newsletters" 
       },
       { 
         label: "Calendar of Events", 
-        href: "#" 
+        href: "/info/calendar-of-events" 
       },
       { 
         label: "Mess Menu", 
-        href: "#" 
+        href: "/info/mess-menu" 
       },
       { 
         label: "Digital Abdalian", 
-        href: "#" 
+        href: "/info/digital-abdalian" 
       },
       { 
         label: "Wing & Mascots", 
-        href: "#" 
+        href: "/info/wing-mascots" 
       },
     ],
   },
@@ -251,6 +274,23 @@ export const navMegaMenus: MegaMenu[] = [
       { 
         label: "Contact Us", 
         href: "/contact" 
+      },
+    ],
+  },
+  {
+    label: "INFORMATION",
+    links: [
+      {
+        label: "Privacy Policy",
+        href: "/info/privacy-policy",
+      },
+      {
+        label: "Terms & Conditions",
+        href: "/info/terms-conditions",
+      },
+      {
+        label: "Cancelation Policy",
+        href: "/info/cancelation-policy",
       },
     ],
   },

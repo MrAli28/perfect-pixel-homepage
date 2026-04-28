@@ -13,15 +13,13 @@ const WelcomeSection = () => {
             </h2>
             <p className="text-cch-body-text leading-relaxed text-[15px] mb-6">
               Welcome to Bahar Cadet School (BCS), where excellence meets discipline. At BCS, we are committed to
-              preparing our students for the prestigious military colleges of Pakistan, including Military College
-              Murree, Military College Jhelum, PAF Sargodha, and Military College Sui. Our dedicated team works
-              tirelessly day and night to ensure our students achieve success in these highly competitive exams.
+              preparing our students for the prestigious military colleges of Pakistan through focused academics,
+              structured mentoring, and character development.
             </p>
             <p className="text-cch-body-text leading-relaxed text-[15px] mb-6">
-              BCS is more than just a school; it is a nurturing ground for future leaders. We focus on a rigorous
-              academic curriculum combined with physical training and character development, instilling values of
-              integrity, discipline, and patriotism in our students. Our holistic approach ensures that our cadets are
-              academically, mentally, and physically prepared to take on the challenges of military life.
+              BCS is more than just a school; it is a nurturing ground for future leaders. A rigorous academic
+              curriculum, physical training, and character development work together to instill integrity, discipline,
+              and patriotism in every cadet.
             </p>
             <p className="text-cch-dark-text font-bold text-sm mb-1">Bahar Cadet School (BCS)</p>
             <p className="text-cch-body-text text-sm mb-8">Excellence, Discipline, and Leadership</p>

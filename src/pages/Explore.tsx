@@ -32,6 +32,7 @@ const Explore = () => {
         <div className="cch-container space-y-8">
           <PageQuickLinks
             links={[
+              { label: "Foreword by the Principal", href: "/info/foreword-by-principal" },
               { label: "About", href: "/about" },
               { label: "Admissions", href: "/admissions" },
               { label: "Academics", href: "/academics" },
